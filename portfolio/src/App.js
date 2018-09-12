@@ -23,12 +23,16 @@ class App extends React.Component {
     console.log(this.state.theme)
     return (
         <div className={this.state.theme} >
-          <div><img className="time-of-day-icon"src={sun} alt="sun"/></div>
+          <div className="switch-wrapper">
+            <img className="time-of-day-icon"src={sun} alt="sun"/>
+          </div>
           <label className="switch">
             <input type="checkbox" value={this.state.isDay} onChange={this.handleChange} />
             <div className="slider"></div>
           </label>
-          <div><img className="time-of-day-icon"src={moon} alt="moon"/></div>
+          <div>
+            <img className="time-of-day-icon"src={moon} alt="moon"/>
+          </div>
         </div>
     );
   }
