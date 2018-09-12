@@ -1,28 +1,70 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.body-dark {
+  background: linear-gradient(45deg, black,purple, darkgrey, darkblue);
   color: white;
+  height: 100vh;
+  width: 1200px;
+  display:flex;
+  justify-content: flex-end;
 }
 
-.App-title {
-  font-size: 1.5em;
+.body-light {
+  background: linear-gradient(45deg,darkblue, blue, cyan, whitesmoke, skyblue,lightblue);
+  color:black;
+  height: 100vh;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  outline: none;
+}
+.switch input {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 7px;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  background-color: skyblue;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 0px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: purple;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.time-of-day-icon {
+  margin: 5px;
 }
