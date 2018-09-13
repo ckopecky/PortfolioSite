@@ -2,7 +2,7 @@
 
 .body-dark {
   background: linear-gradient(45deg, black,purple, darkgrey, darkblue);
-  color: white;
+  color: white !important;
   height: 100vh;
   width: 1200px;
   display:flex;
@@ -11,7 +11,7 @@
 
 .body-light {
   background: linear-gradient(45deg,darkblue, blue, cyan, whitesmoke, skyblue,lightblue);
-  color:black;
+  color:black !important;
   height: 100vh;
   width: 1200px;
   display: flex;
@@ -67,4 +67,15 @@ input:checked + .slider:before {
 
 .time-of-day-icon {
   margin: 5px;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.switch-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
 }
