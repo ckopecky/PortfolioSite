@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import sun from './img/sun.png';
-import moon from './img/moon.png';
+import sun from '../img/sun.png';
+import moon from '../img/moon.png';
+import Navbar from '../Navbar/Navbar';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,18 +23,23 @@ class App extends React.Component {
   render () {
     console.log(this.state.theme)
     return (
-        <div className={this.state.theme} >
-          <div className="switch-wrapper">
-            <img className="time-of-day-icon"src={sun} alt="sun"/>
-          </div>
-          <label className="switch">
+      <div className={this.state.theme}>
+        <div className="main-container">
+        <div className="switch-wrapper">
+            <div>            
+              <img className="time-of-day-icon"src={sun} alt="sun"/>
+            </div>
+            <label className="switch">
             <input type="checkbox" value={this.state.isDay} onChange={this.handleChange} />
             <div className="slider"></div>
-          </label>
-          <div>
+            </label>
+            <div>
             <img className="time-of-day-icon"src={moon} alt="moon"/>
+            </div>
           </div>
+        <Navbar />
         </div>
+      </div>
     );
   }
 }
