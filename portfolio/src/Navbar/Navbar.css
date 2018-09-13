@@ -1,0 +1,17 @@
+
+.navbar-wrapper {
+    height: 30px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+ 
+  }
+
+a {
+    display: flex;
+    text-decoration:none;
+    color: inherit;
+    
+}
+
