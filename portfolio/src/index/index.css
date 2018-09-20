@@ -4,18 +4,18 @@ body {
   font-family: sans-serif;
   display:flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
   background-image: url('../img/bridge.jpg');
   background-size:cover;
 }
 .landing-container {
-  width: 800px;
-  height: 50vh;
+  width: 1000px;
+  height: 70vh;
   background-color: black;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items:center;
 }
@@ -23,23 +23,54 @@ body {
   color: #fff !important;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0% }
-  to { width: 20% }
+.route-aboutme, Link, a{
+  margin: 40px;
+  color: blanchedalmond;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+.aboutme-main {
+  width: 1000px;
+  height: 70vh;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.aboutme-container {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  align-self: flex-start;
+  padding: 50px;
+}
+.biography {
+  font-family: monospace;
+  padding: 20px;
+  color: white;
+}
+
+.navbar-wrapper {
+  display:flex;
+  width: 800px;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  color:white;
+  background-color: goldenrod;
+  opacity: .8;
+}
+
+.pdf {
+  display:inline-flex;
 }
