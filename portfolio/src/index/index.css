@@ -18,13 +18,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  margin-top: 60px;
+  
 }
 .text {
   color: #fff !important;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: 60px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
 
 }
@@ -42,6 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  margin: 60px auto;
 }
 .aboutme-container {
   display:flex;
@@ -73,4 +76,28 @@ body {
 
 .pdf {
   display:inline-flex;
+}
+
+.resume-container {
+  display:flex;
+}
+
+.social-media-wrapper {
+  margin: 20px;
+  border: 5px double black;
+  height: 275px;
+  background-color: goldenrod;
+  opacity: .9;
+}
+
+.download-link {
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  border: 2px solid goldenrod;
+  text-align: center;
+}
+
+.page {
+  margin: 20px;
 }
