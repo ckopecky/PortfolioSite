@@ -4,11 +4,13 @@ import { Document, Page } from 'react-pdf';
 import { Link } from 'react-router-dom';
 import Typist from 'react-typist'
 import TypistLoop from 'react-typist-loop'
+import Navbar from '../Navbar/Navbar';
 import GithubIcon from '../img/GitHubDark.png'
 import LinkedInIcon from '../img/LinkedInDark.png';
 import EmailIcon from '../img/email.png';
 import filePath from '../img/Resume.pdf';
 
+const navStyle = {}
 
 class Resume extends React.Component {
     constructor(props){
@@ -27,8 +29,9 @@ class Resume extends React.Component {
     render() {
         
     return (
+        <div>
+        <Navbar style={navStyle}/>
         <div className="resume-container">
-            
             <Document
                 file={ResumeCMVNK}
                 onLoadSuccess={this.onDocumentLoad}
@@ -40,8 +43,8 @@ class Resume extends React.Component {
             {/* github icon, linkedin icon, contact me */}
             <div>
             <div className="social-media-wrapper">
-                <a href="https://github.com/ckopecky" target="_blank"><img src={GithubIcon} alt="github"/></a>
-                <a href="https://linkedin.com/in/cmvnk" target="_blank"><img src={LinkedInIcon} alt="linkedin"/></a>
+                <a href="https://github.com/ckopecky" target="_blank" rel="noopener noreferrer"><img src={GithubIcon} alt="github"/></a>
+                <a href="https://linkedin.com/in/cmvnk" target="_blank"rel="noopener noreferrer"><img src={LinkedInIcon} alt="linkedin"/></a>
                 <Link to=""><img src={EmailIcon} alt="email"/></Link>
                 
             </div>
@@ -57,6 +60,7 @@ class Resume extends React.Component {
       </TypistLoop>
             </Link>
             </div>
+        </div>
         </div>
         );
     }

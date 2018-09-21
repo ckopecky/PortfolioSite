@@ -3,16 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bootstrap": "^4.1.3",
+    "core-js": "^2.5.7",
+    "map-to-css-modules": "^1.0.6",
+    "popper": "^1.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-codemod": "^4.0.0",
     "react-dom": "^16.5.0",
     "react-pdf": "^3.0.5",
+    "react-responsive-audio-player": "^1.4.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
     "react-typist": "^2.0.4",
-    "react-typist-loop": "^0.0.5"
+    "react-typist-loop": "^0.0.5",
+    "reactstrap": "^6.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

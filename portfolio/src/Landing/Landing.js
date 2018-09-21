@@ -4,6 +4,7 @@ import Typist from 'react-typist'
 import TypistLoop from 'react-typist-loop'
  
 const Landing = () => (
+  <div className="main-container">
   <div className="landing-container">
   <div className="text">
     <TypistLoop interval={3000}>
@@ -20,6 +21,6 @@ const Landing = () => (
       </div>
       </div>
   </div>
-  
+  </div>
 )
 export default Landing;
