@@ -4,7 +4,8 @@ import Typist from 'react-typist'
 import TypistLoop from 'react-typist-loop'
  
 const Landing = () => (
-  <div className="landing-container text">
+  <div className="landing-container">
+  <div className="text">
     <TypistLoop interval={3000}>
         {[
           'Hi, I\'m Christina',
@@ -17,7 +18,7 @@ const Landing = () => (
       <div className="route-aboutme">
         <Link to="/aboutme">Enter my site</Link>
       </div>
-
+      </div>
   </div>
   
 )
