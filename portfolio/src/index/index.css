@@ -1,14 +1,11 @@
 body {
-  margin: 0 auto;
-  padding: 0;
   font-family: sans-serif;
-  display:flex;
-  justify-content: center;
+}
+.main-container {
+  background: url('../img/bridge.jpg');
+  background-size: cover;
+  width: 100vw;
   height: 100vh;
-  max-width: 1200px;
-  margin: 0px auto;
-  background-image: url('../img/bridge.jpg');
-  background-size:cover;
 }
 .landing-container {
   width: 1000px;
@@ -65,15 +62,20 @@ body {
 }
 
 .navbar-wrapper {
+  width: 100%;
   display:flex;
-  width: 800px;
   justify-content: space-around;
-  padding-bottom: 30px;
-  color:white;
-  background-color: goldenrod;
+  background-color: olivedrab;
   opacity: .8;
 }
 
+.navlink {
+  color: white;
+}
+
+.navlink:hover {
+  color: goldenrod;
+}
 .pdf {
   display:inline-flex;
 }
@@ -99,5 +101,22 @@ body {
 }
 
 .page {
+  margin: 20px;
+}
+
+.projects-main-container {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.projects-wrapper {
+  width: 100%;
+}
+
+.single-project-card {
+  width: 33%;
+  height: auto;
   margin: 20px;
 }
