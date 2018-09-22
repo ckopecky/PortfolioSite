@@ -106,17 +106,22 @@ body {
 
 .projects-main-container {
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  height: auto;
   
 }
-
 .projects-wrapper {
-  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.single-project-card {
+  width: 400px;
+  margin:10px;
+  height: 600px;
 }
 
-.single-project-card {
-  width: 33%;
-  height: auto;
-  margin: 20px;
+.card-links {
+  display:flex;
 }

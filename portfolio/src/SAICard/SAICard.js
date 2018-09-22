@@ -7,7 +7,7 @@ import SAI2 from '../img/SAI2.png';
 const SAICard = (props) => {
   return (
     <div>
-      <Card>
+      <Card className="single-project-card">
         <CardBody>
           <CardTitle>Single Page Application Design</CardTitle>
           <CardSubtitle>San Francisco-Peninsula Chapter of Sigma Alpha Iota</CardSubtitle>
