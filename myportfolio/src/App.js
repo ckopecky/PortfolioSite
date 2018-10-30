@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Accordian from './components/accordian';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p id="dev-name">Christina Kopecky</p>
+          <p id="dev-position">Full-Stack Web Developer</p>
         </header>
+        <nav>
+
+          <Accordian className="mobile-nav" title = "Projects" />
+          <Accordian className="mobile-nav" title = "Resumé" />
+          <Accordian className="mobile-nav" title = "Contact" />
+          <Accordian className="mobile-nav" title = "About Me" />
+
+        </nav>
       </div>
     );
   }
