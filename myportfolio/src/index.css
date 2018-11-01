@@ -405,6 +405,8 @@ body {
     height: auto;
     width: 95%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: 5px double solid black;
     border-radius: 5px;    
@@ -415,8 +417,38 @@ body {
 
   .resume-card {
     background: white;
-    height: 200px;
+    height: auto;
+    width: 90%;
     display: flex;
     margin: 10px;
   }
+
+  .download-pdf {
+    background-color:#E5A53D;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 4px;
+    margin: 20px;
+  }
+
+  .resume-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .resume-link:hover {
+    color: #355C89;
+    text-decoration: none;
+  }
+
+  .resume-button-container {
+    display: flex;
+    width: 100%;
+    
+  }
+
 }
