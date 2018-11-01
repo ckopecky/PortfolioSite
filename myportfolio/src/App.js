@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import './index.css';
-import Accordian from './components/accordian';
+import Accordion from './components/accordion';
+import Navbar from './components/Navbar';
+import AppRouter from './components/AppRouter';
 
 class App extends Component {
+    
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <p id="dev-name">Christina Kopecky</p>
-          <p id="dev-position">Full-Stack Web Developer</p>
+          <div className="header">
+            <p id="dev-name">Christina Kopecky</p>
+            <p id="dev-position">Full-Stack Web Developer</p>
+          </div>
         </header>
+     
         <nav>
 
-          <Accordian className="mobile-nav" title = "Projects" />
-          <Accordian className="mobile-nav" title = "Resumé" />
-          <Accordian className="mobile-nav" title = "Contact" />
-          <Accordian className="mobile-nav" title = "About Me" />
+          <Accordion  className="mobile-nav"/>
+          <Navbar />
+          <AppRouter className="AppRouter"/> 
+      
 
         </nav>
       </div>
