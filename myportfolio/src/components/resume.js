@@ -14,8 +14,10 @@ class resume extends Component {
                             <Link className="resume-link" to="./contact">Contact Me</Link>
                         </div>
                     </div>
-                    <div className="resume-card">Test 123</div>
-
+                    <object data={Resume} 
+                    type='application/pdf' 
+                    width='100%' aria-label="hello"
+                    height='700px'></object>
                 </div>
             </div>
         );
@@ -23,3 +25,5 @@ class resume extends Component {
 }
 
 export default resume;
+
+

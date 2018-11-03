@@ -443,7 +443,36 @@ body {
     height: auto;
     width: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+  }
+
+  .resume-name {
+    font-family: 'Cinzel';
+    font-size: 3.5rem;
+  }
+
+  .resume-position {
+    font-size: 2.0rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+  }
+
+  .job-links {
+    font-size: 1.6rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    color: black;
+  }
+
+  .job-link {
+    margin-right: 20px;
   }
 
   .download-pdf {
@@ -741,6 +770,9 @@ body {
     height: auto;
     width: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
   }
 
@@ -771,5 +803,60 @@ body {
     width: 100%;
     
   }
+  .contact-container {
+    background: linear-gradient(#450404, #650503);    height: 600px;
+    width: 50%;
+    display: flex;
+    border: 5px double solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 10px 0px;
+  }
 
+  .contact-form {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-input {
+    display:flex;
+    padding: 20px;
+  }
+
+  label {
+    color:#DDDFF5;
+    width: 100px;
+  }
+  .message {
+    height: 60px;
+    width: 100%;
+  }
+  .form-blank-name-email {
+    width: 100%;
+  }
+  .contact-header {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 36px;
+    color: #DDDFF5;
+  }
+}
+.submit-button {
+  background-color:#E5A53D;
+  height: 35px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  box-shadow: 4px 2px 3px  #355C89;
+  border-radius: 4px;
+  margin: 20px;
 }
