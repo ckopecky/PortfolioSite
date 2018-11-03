@@ -4,26 +4,22 @@ class mobilecontact extends Component {
     render() {
         return (
             <div>
-                <div className="contact-form-input">
-                    <label>
-                        First name
-                    </label>
-                    <input type="text"/>
-                </div>
-                <div className="contact-form-input">
-                    <label>
-                        Last name
-                    </label>
-                    <input type="text"/>
-                </div>
-                <div className="contact-form-input">
-                    <label>
-                        E-Mail Address
-                    </label>
-                    <input type="text"/>
-                </div>
-                <div>
-                  
+            <form 
+                className='contact-form'
+                action={`https://formspree.io/kopecky12112@gmail.com`} method="POST">
+                    <div className="contact-form-input">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name"
+                        className='form-blank-name-email'
+                        placeholder="Enter your name - required"
+                        required/>
+                    </div>
+                    <div className="contact-form-input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="_replyto"
+                        className='form-blank-name-email'
+                        placeholder="Enter your email - required" required/>
+                    </div>
                     <div className="contact-form-radio">
                         <label>
                             Reason for Contact
@@ -35,18 +31,16 @@ class mobilecontact extends Component {
                             <div className="radio-button"><input type="radio" className="radio-input" name="reason" value="Flute"/><span>Flute Gigs and Teaching</span></div>
                         </div>
                     </div>
-                    <div className="contact-form-message" >
-                            <label>Message:</label>
-                            <input className="message" type="textarea" />
+                    <div  className="contact-form-input">
+                        <label for="message">Message:</label>
+                        <input type="textarea" 
+                        name="message"
+                        className='message' required
+                        placeholder="required"
+                        />
                     </div>
-                    <div action="?" method="POST">
-                        <div className="g-recaptcha" data-sitekey="your_site_key"></div>
-                    </div>  
-                    {/* TODO: get site key for RECAPTCHA */}
-                    <div className="submit-button">Submit</div>   
-                </div>
-
-
+                    <input className="submit-button" type="submit" value="Send"/>
+            </form> 
             </div>
         );
     }
