@@ -25,6 +25,17 @@ class contact extends Component {
 
                                 required/>
                             </div>
+                            <div className="contact-form-radio">
+                            <label>
+                                Reason for Contact
+                            </label>
+                            <div className="radio-group">
+                                <div className="radio-button">
+                                <input className="radio-input" type="radio" name="reason" value="Employment"/><span>Employment</span></div>
+                                <div className="radio-button"><input type="radio" className="radio-input" name="reason" value="General Inquiry"/><span>General Inquiry</span></div>
+                                <div className="radio-button"><input type="radio" className="radio-input" name="reason" value="Flute"/><span>Flute Gigs and Teaching</span></div>
+                            </div>
+                        </div>
                             <div  className="contact-form-input">
                                 <label for="message">Message:</label>
                                 <input type="textarea" 
