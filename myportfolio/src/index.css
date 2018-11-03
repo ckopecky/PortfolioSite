@@ -476,7 +476,7 @@ body {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 761px) {
    body {
     background-image: url("./img/sample_code_light.png");
   }
