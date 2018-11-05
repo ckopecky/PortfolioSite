@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Resume from '../img/Kopecky_Christina_Resume.pdf';
 
 class mobileresume extends Component {
     constructor(props) {
@@ -20,8 +21,9 @@ class mobileresume extends Component {
                 </ul>
 
                 <h4>Want to learn more?</h4>
-                <div className="submit-button">Download my resumé</div>
-                <div className="submit-button">Contact Me</div>
+                <div className="download-pdf"><a className="resume-link" href={Resume} target="_blank" rel="noopener noreferrer" >
+                            Download PDF of Resumé</a>
+                        </div>                <div className="submit-button">Contact Me</div>
 
             </div>
         );
