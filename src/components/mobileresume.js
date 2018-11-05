@@ -21,7 +21,7 @@ class mobileresume extends Component {
                 </ul>
 
                 <h4>Want to learn more?</h4>
-                <div className="download-pdf"><a className="resume-link" href={Resume} target="_blank" rel="noopener noreferrer" >
+                <div className="submit-button"><a className="resume-link" href={Resume} target="_blank" rel="noopener noreferrer" >
                             Download PDF of Resumé</a>
                         </div>                <div className="submit-button">Contact Me</div>
 
