@@ -4,7 +4,9 @@ import Mobileprojects from './mobileprojects';
 import Mobileresume from './mobileresume';
 import Mobilecontact from './mobilecontact';
 import MobileAbout from './mobileabout';
-import LambdaNotesImg from '../img/sample_code_light.png';
+import GoogleClone from '../img/Google-clone.png';
+import LambdaVideoDBImg from '../img/LDBLogin.png';
+import LambdaVideoList from '../img/LDBLectureList.png'
 import ChristinaProfilePic from '../img/profilepic.jpg';
 // import '../index.css';
 
@@ -28,7 +30,7 @@ class accordion extends Component {
                     </Panel.Heading>
                     <Panel.Collapse>
                         <Panel.Body className="panel-body">
-                            <Mobileprojects title = "Lambda Notes" img={LambdaNotesImg} title2="Portfolio" img2={LambdaNotesImg}/>
+                            <Mobileprojects id1="LectureList" id2="SearchClone" title = "UX1 Lecture Database" img={LambdaVideoList} title2="Search Engine Clone" img2={GoogleClone}/>
                         </Panel.Body>
                     </Panel.Collapse>
                     </Panel>

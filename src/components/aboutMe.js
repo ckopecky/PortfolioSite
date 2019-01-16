@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../index.css';
 import DarkCode from '../img/sample_code_dark.png';
 import ProfilePic from '../img/profilepic.jpg';
+import BreakoutPic from '../img/breakout.png';
+import BreakoutPic2 from '../img/breakout2.png';
 
 class AboutMe extends Component {
     render() {
@@ -32,11 +34,14 @@ class AboutMe extends Component {
                     <h5 className="about-me-featured-header">Featured:</h5>
                     <div className="card-container">
                     <div className="card">
-                        <img className="card-img-top" src={DarkCode} alt="cap"/>
+                    <div className="card-img-top">
+                            <img className="image-project" src={BreakoutPic2} alt="cap"/>
+                            <img className="image-project" src={BreakoutPic} alt="cap1"/>
+                        </div>  
                         <div className="card-body">
-                            <h5 className="card-title">Project No. 1</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <Link to="/projects">See project</Link>
+                            <h5 className="card-title">Breakout-Clone(ish)</h5>
+                            <p className="card-text">A clone of the game Breakout that was part of a Sprint Challenge I did for Lambda School. What I have here was completed in three hours.</p>
+                            <Link className="submit-button" to="/projects/breakout">See project on Github</Link>
                         </div>
                     </div>
                     <div className="card">
