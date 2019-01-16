@@ -267,7 +267,6 @@ body {
     width: 100%;
   }
   .card {
-    height: auto;
     margin: 20px;
     background-color: white;
     width: 40%;
@@ -275,7 +274,7 @@ body {
   }
   .card-img-top {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
 
   .card-body {
@@ -688,17 +687,30 @@ body {
     width: 100%;
   }
   .card {
-    height: auto;
     margin: 20px;
-    background-color: white;
+    background-color: silver;
     width: 40%;
     height: auto;
   }
   .card-img-top {
     width: 100%;
     height: auto;
+    border: 10px solid #355C89;
+    display:flex;
+    justify-content: space-around;
   }
 
+  .image-project {
+    border: 10px solid silver;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .card-text {
+    color: black;
+  }
   .card-body {
     padding: 10px;
   }

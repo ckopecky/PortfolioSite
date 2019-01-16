@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import AboutMe from './aboutMe'
 import Projects from './projects';
+import SingleProject from './SingleProject';
 import Resume from './resume';
 import Blog from './blog';
 import Contact from './contact';
@@ -13,6 +14,7 @@ class AppRouter extends Component {
         <div>
             <Switch >
                 <Route path="/projects" component={Projects}/>
+                <Route path="/projects/:id" component={SingleProject}/>
                 <Route path="/resume" component={Resume}/>
                 <Route path="/contact" component={Contact}/>
                 <Route path="/aboutme" component={AboutMe}/>
