@@ -35,8 +35,8 @@ class AboutMe extends Component {
                     <div className="card-container">
                     <div className="card">
                     <div className="card-img-top">
-                            <img className="image-project" src={BreakoutPic2} alt="cap"/>
-                            <img className="image-project" src={BreakoutPic} alt="cap1"/>
+                            <img id="breakout" className="image-project" src={BreakoutPic2} alt="cap"/>
+                            <img id="breakout" className="image-project" src={BreakoutPic} alt="cap1"/>
                         </div>  
                         <div className="card-body">
                             <h5 className="card-title">Breakout-Clone(ish)</h5>
