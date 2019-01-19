@@ -6,9 +6,10 @@ import MobileDarkLanding from '../img/mobile-dark-landing.png';
 import MobileLightLanding from '../img/mobile-light-landing.png';
 import BreakOutClone from '../img/breakout.png';
 import BreakOutClone2 from '../img/breakout2.png';
-import SAI1 from '../img/SAI1.png';
 import SAI2 from '../img/SAI2.png';
-import SAI3 from '../img/SAI3.png';
+import HP01 from '../img/HP01.png';
+import HP02 from '../img/HP02.png';
+import HP03 from '../img/HP03.png';
 
 class projects extends Component {
     render() {
@@ -17,39 +18,40 @@ class projects extends Component {
                 <div className="about-me-container">
                     <h5 className="about-me-featured-header">Past Projects:</h5>
                     <div className="card-container">
-                    <div className="card">
-                    <div className="card-img-top">
-                            <img className="image-project" src={BreakOutClone} alt="cap"/>
-                            <img className="image-project" src={BreakOutClone2} alt="cap1"/>
-                        </div>                        
-                        <div className="card-body">
-                            <h5 className="card-title">Breakout Clone (ish)</h5>
-                            <p className="card-text">A clone of the game Breakout that was created during my time at Lambda School during a Sprint Challenge. Sprint Challenges at Lambda School are done in three hours on a Friday morning - this is the result of what I was able to do during that time. 
-                            <br/>
-                            <p className="card-text">Tech used: <strong className="card-text">Python3, Pygame, Pipenv</strong></p>
-                            </p>
-                            <Link to="/projects">See project</Link><br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo</a>
+                        <div className="card">
+                            <div className="card-img-top">
+                                <img id="breakout" className="image-project" src={BreakOutClone} alt="cap"/>
+                                <img id="breakout" className="image-project" src={BreakOutClone2} alt="cap1"/>
+                            </div>                        
+                            <div className="card-body">
+                                <h5 className="card-title">Breakout Clone (ish)</h5>
+                                <p className="card-text">A clone of the game Breakout that was created during my time at Lambda School during a Sprint Challenge. Sprint Challenges at Lambda School are done in three hours on a Friday morning - this is the result of what I was able to do during that time. 
+                                <br/>
+                                <p className="card-text">Tech used: <strong className="card-text">Python3, Pygame, Pipenv</strong></p>
+                                </p>
+                                <Link to="/projects">See project</Link><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo</a>
+                            </div>
                         </div>
 
-                    </div>
-                    <div className="card">
-                        <img className="card-img-top" src={DarkCode} alt="cap"/>
-                        <div className="card-body">
-                            <h5 className="card-title">Lambda Notes</h5>
-                            <p className="card-text">Lambda Notes was my first full-stack app. This was a practice in creating something that was to fit to client specifications during my time at Lambda School. I learned a lot from this app and I am proud of it.<br/>
+                    <div className="card" id="sorting-hat">
+                        <div className="card-img-top" id="sorting">
+                            <img id ="HP" className="image-project" src={HP02} alt="cap"/>
+                            <img id="HP" className="image-project" src={HP01} alt="cap1"/>
+                        </div>                             <div className="card-body">
+                            <h5 className="card-title">Sorting Hat</h5>
+                            <p className="card-text">Welcome to Hogwarts School of Witchcraft and Wizardry! Answer these six questions to be sorted into your house!<br/>
                             <br/>
-                            Tech used: <strong className="card-text">MongoDB, Express, React, Node</strong></p>
-                            <a href="#">See Project</a><br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-frontend</a><br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-backend</a>
+                            Tech used: <strong className="card-text"> React</strong></p>
+                            <a href="http://thegreathall.herokuapp.com">See Website</a><br/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky/React-Sorting-Hat">Github Repo</a><br/>
 
 
                         </div>
                     </div>
                     <div className="card">
                     <div className="card-img-top">
-                            <img className="image-project" src={SAI2} alt="cap"/>
+                            <img id="SAI" className="image-project" src={SAI2} alt="cap"/>
                     </div>                        
                         <div className="card-body">
                             <h5 className="card-title">UX Sigma Alpha Iota website</h5>

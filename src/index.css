@@ -694,7 +694,6 @@ body {
   }
   .card-img-top {
     width: 100%;
-    height: auto;
     border: 10px solid #355C89;
     display:flex;
     justify-content: space-around;
@@ -702,6 +701,26 @@ body {
 
   .image-project {
     border: 10px solid silver;
+    height: auto;
+  }
+
+  #SAI {
+    width: 100%;
+  }
+
+  #breakout {
+    width: 50%;
+    height: 500px;
+  }
+
+  #sorting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
+  #HP {
+    height: 50%;
   }
 
   .card-title {
