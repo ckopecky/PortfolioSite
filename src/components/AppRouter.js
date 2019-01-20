@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import AboutMe from './aboutMe'
-import Projects from './projects';
+import AboutMe from './AboutMe/aboutMe'
+import Projects from './Projects/projects';
 import SingleProject from './SingleProject';
 import Resume from './resume';
 import Blog from './blog';
