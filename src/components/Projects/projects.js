@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import DarkCode from '../img/sample_code_dark.png';
-import LambdaDB from '../img/LDBLectureList.png';
-import MobileDarkLanding from '../img/mobile-dark-landing.png';
-import MobileLightLanding from '../img/mobile-light-landing.png';
-import BreakOutClone from '../img/breakout.png';
-import BreakOutClone2 from '../img/breakout2.png';
-import SAI2 from '../img/SAI2.png';
-import HP01 from '../img/HP01.png';
-import HP02 from '../img/HP02.png';
-import HP03 from '../img/HP03.png';
+import DarkCode from '../../img/sample_code_dark.png';
+import LambdaDB from '../../img/LDBLectureList.png';
+import MobileDarkLanding from '../../img/mobile-dark-landing.png';
+import MobileLightLanding from '../../img/mobile-light-landing.png';
+import BreakOutClone from '../../img/breakout.png';
+import BreakOutClone2 from '../../img/breakout2.png';
+import SAI2 from '../../img/SAI2.png';
+import HP01 from '../../img/HP01.png';
+import HP02 from '../../img/HP02.png';
+import HP03 from '../../img/HP03.png';
 
 class projects extends Component {
     render() {
@@ -34,11 +34,12 @@ class projects extends Component {
                             </div>
                         </div>
 
-                    <div className="card" id="sorting-hat">
+                        <div className="card" id="sorting-hat">
                         <div className="card-img-top" id="sorting">
                             <img id ="HP" className="image-project" src={HP02} alt="cap"/>
                             <img id="HP" className="image-project" src={HP01} alt="cap1"/>
-                        </div>                             <div className="card-body">
+                        </div>                             
+                        <div className="card-body">
                             <h5 className="card-title">Sorting Hat</h5>
                             <p className="card-text">Welcome to Hogwarts School of Witchcraft and Wizardry! Answer these six questions to be sorted into your house!<br/>
                             <br/>
@@ -49,43 +50,38 @@ class projects extends Component {
 
                         </div>
                     </div>
-                    <div className="card">
-                    <div className="card-img-top">
+                        <div className="card">
+                            <div className="card-img-top">
                             <img id="SAI" className="image-project" src={SAI2} alt="cap"/>
-                    </div>                        
-                        <div className="card-body">
-                            <h5 className="card-title">UX Sigma Alpha Iota website</h5>
-                            <p className="card-text">
+                        </div>                        
+                            <div className="card-body">
+                                <h5 className="card-title">UX Sigma Alpha Iota website</h5>
+                                <p className="card-text">
                             Currently serving as webmaster of the Sigma Alpha Iota San Francisco-Peninsula Alumnae Chapter. I am working on a codebase for a website, but for now I created the design of the current site using Wix. 
-                            <br/>
-                            <p className="card-text">Tech used: <strong className="card-text">Wix</strong></p>
-                            </p><br/>
-                            <a href="https://saisfalums.wixsite.com/sai-sf">See site</a><br/>
+                                <br/>
+                                <p className="card-text">Tech used: <strong className="card-text">Wix</strong></p>
+                                </p><br/>
+                                <a href="https://saisfalums.wixsite.com/sai-sf">See site</a><br/>
                             {/* <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo</a> */}
+                            </div>
+
+                    </div>
+                        <div className="card">
+                            <img className="card-img-top" src={DarkCode} alt="cap"/>
+                            <div className="card-body">
+                                <h5 className="card-title">Lambda Notes</h5>
+                                <p className="card-text">Lambda Notes was my first full-stack app. This was a practice in creating something that was to fit to client specifications during my time at Lambda School. I learned a lot from this app and I am proud of it.<br/>
+                                <br/>
+                                Tech used: <strong className="card-text">MongoDB, Express, React, Node</strong></p>
+                                <a href="#">See Project</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-frontend</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-backend</a>
+                            </div>
                         </div>
-
-                    </div>
-                    <div className="card">
-                        <img className="card-img-top" src={DarkCode} alt="cap"/>
-                        <div className="card-body">
-                            <h5 className="card-title">Lambda Notes</h5>
-                            <p className="card-text">Lambda Notes was my first full-stack app. This was a practice in creating something that was to fit to client specifications during my time at Lambda School. I learned a lot from this app and I am proud of it.<br/>
-                            <br/>
-                            Tech used: <strong className="card-text">MongoDB, Express, React, Node</strong></p>
-                            <a href="#">See Project</a><br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-frontend</a><br/>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ckopecky">Github Repo-backend</a>
-
-
-                        </div>
-                    </div>
-
-
-
-                    </div>
+                    </div> {/* < -- end card-container */}
                 {/* TO DO: Pagination */}
             
-                </div>
+                </div> {/* < -- end about-me-container */}
                 
                 <div className="about-me-container">
                     <h5 className="about-me-featured-header">Works-In-Progress:</h5>
@@ -135,7 +131,8 @@ class projects extends Component {
                 </div>
             {/* TO DO: Pagination */}
    
-            </div>
+            </div> 
+            // end switch
         );
     }
 }
