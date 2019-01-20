@@ -1,0 +1,63 @@
+{
+  "projects": [
+  
+      {
+          "id": 1,
+          "name": "Breakout Clone(ish)",
+          "description": "A clone of the game Breakout that was created during my time at Lambda School during a Sprint Challenge. Sprint Challenges at Lambda School are done in three hours on a Friday morning - this is the result of what I was able to do during that time.",
+          "technology": ["Python3, Pygame, Pipenv"],
+          "website": "",
+          "github": "https://github.com/ckopecky/Sprint-Challenge--Python-1",
+          "images" : {
+              "one": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/breakout.png?raw=true",
+              "two": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/breakout2.png?raw=true"
+          }
+      },
+      {
+          "id": 2,
+          "name": "Wizard School Sorting Hat Quiz",
+          "description": "Welcome to Hogwarts School of Witchcraft and Wizardry! Answer these six questions to be sorted into your house!",
+          "technology": ["React"],
+          "website": "http://greathall.herokuapp.com",
+          "github": "https://github.com/ckopecky/React-Sorting-Hat",
+          "images" : {
+              "one": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP01.png?raw=true",
+              "two": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP02.png?raw=true",
+              "three": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP03.png?raw=true"
+          }
+      },
+      {
+          "id":3,
+          "name": "Database for Cohort Lectures at Lambda School",
+          "description": "As section lead of the UX cohort, I discovered a need to have lecture videos all in one repository that students could access. This is a result of that idea. The idea is to be able to have students access an account profile and change their passwords if they want to. As is, we have a central account that students use to access videos - they can create an account if they would like, but there is no way to update credentials yet. ",
+          "technology": ["React", "Express", "MongoDB", "Node"],
+          "website": "http://ux1lectures.herokuapp.com",
+          "github": {
+              "frontend": "https://github.com/ckopecky/UX-Lectures",
+              "backend": "https://github.com/ckopecky/UX-Lectures-backend"
+          },
+          "images" : {
+              "one": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP01.png?raw=true",
+              "two": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP02.png?raw=true",
+              "three": "https://github.com/ckopecky/PortfolioSite/blob/master/src/img/HP03.png?raw=true"
+          }
+      },
+      {
+          "id": 4,
+          "name": "Lambda Notes",
+          "description": "My very first full-stack application completed during my time as a student at Lambda School. It's elementary, for sure, but it's something I'm super proud of after having come from a background with no programming experience.",
+          "technology": ["React", "Express", "MongoDB", "Node"],
+          "website": "",
+          "github": {
+              "frontend": "https://github.com/ckopecky/notes-frontend",
+              "backend": "https://github.com/ckopecky/notes"
+          },
+          "images" : {
+              "one": "",
+              "two": "",
+              "three": ""
+          }
+      }
+      
+  ]
+}
