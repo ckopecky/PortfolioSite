@@ -4,13 +4,32 @@
     margin: 0;
     padding: 0;
 
+
     .nav-bar-brand {
-        width: 25%;
-        margin: 0;
-        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        .name-slug{
+            margin: 0px 20px;
+            font-family: 'Homemade Apple';
+            @media @phone {
+                display: none;
+            }
+        }
+        .mobile-name-slug {
+            display: none;
+            font-family: 'Homemade Apple';
+            @media @phone {
+                display: flex;
+            }
+        }
+        .title-slug {
+            align-self: center;
+            padding-bottom: 5px;
+            @media @tablet {
+                display: none;
+            }
+        }
     }
 
     .navbar-collapse {
