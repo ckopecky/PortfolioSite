@@ -133,12 +133,36 @@ table {
   padding: 0;
 }
 .nav-bar-portfolio .nav-bar-brand {
-  width: 25%;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nav-bar-portfolio .nav-bar-brand .name-slug {
+  margin: 0px 20px;
+  font-family: 'Homemade Apple';
+}
+@media (max-width: 400px) {
+  .nav-bar-portfolio .nav-bar-brand .name-slug {
+    display: none;
+  }
+}
+.nav-bar-portfolio .nav-bar-brand .mobile-name-slug {
+  display: none;
+  font-family: 'Homemade Apple';
+}
+@media (max-width: 400px) {
+  .nav-bar-portfolio .nav-bar-brand .mobile-name-slug {
+    display: flex;
+  }
+}
+.nav-bar-portfolio .nav-bar-brand .title-slug {
+  align-self: center;
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .nav-bar-portfolio .nav-bar-brand .title-slug {
+    display: none;
+  }
 }
 .nav-bar-portfolio .navbar-collapse {
   width: 100%;

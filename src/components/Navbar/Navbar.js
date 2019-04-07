@@ -22,10 +22,10 @@ class Navigation extends React.Component {
       render() {
         return (
             <div>
-                <Navbar className="nav-bar-portfolio" color="faded" light expand="md">
+                <Navbar className="nav-bar-portfolio" color="light" light expand="md">
                     <NavbarBrand href="/" className="mr-auto nav-bar-brand">
-                        <span>Christina Kopecky</span>
-                        <h1 className="hidden">CK</h1>
+                        <span className="name-slug">Christina Kopecky</span>
+                        <span className="mobile-name-slug">Christina K.</span>
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
