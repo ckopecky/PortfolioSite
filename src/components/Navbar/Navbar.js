@@ -32,13 +32,16 @@ class Navigation extends React.Component {
                     <Nav className="nav-bar-links" navbar>
                         <div id="collapsed-nav-link-bar" className="nav-link-bar">
                             <NavItem>
-                                <NavLink href="/components/">Portfolio</NavLink>
+                                <NavLink href="/portfolio">Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/components/">Resume</NavLink>
+                                <NavLink href="/resume">Resume</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/components/">Blog</NavLink>
+                                <NavLink href="/blog">Blog</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/contact">Contact</NavLink>
                             </NavItem>
                         </div>
                         <NavItem className="career-urls">
