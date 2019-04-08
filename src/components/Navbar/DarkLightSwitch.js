@@ -7,7 +7,7 @@ const DarkLightSwitch = (props) => {
             <label>Mode:</label>
             <div htmlFor="dark_light" 
                 className="switch"    
-                onClick={props.toggleDarkLight}>
+                onClick={props.toggleDarkLight}><p>{props.buttonLabel}</p>
             </div>
         </div>
     );
