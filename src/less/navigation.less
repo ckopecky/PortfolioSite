@@ -1,16 +1,20 @@
-.nav-bar-portfolio {
-    width: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
 
+.nav-bar-portfolio {
+    display:flex;
+    padding: 0;
+    width:100%;
 
     .nav-bar-brand {
-        display: flex;
+        width: 40%;
+        display:flex;
         align-items: center;
-        justify-content: center;
+        margin: 0;
+        @media @tablet {
+            width: 85%;
+            padding: 0;
+        }
         .name-slug{
-            margin: 0px 20px;
+            // margin: 0px 20px;
             font-family: 'Homemade Apple';
             @media @phone {
                 display: none;
@@ -23,62 +27,102 @@
                 display: flex;
             }
         }
-        .title-slug {
-            align-self: center;
-            padding-bottom: 5px;
-            @media @tablet {
-                display: none;
-            }
-        }
     }
 
     .navbar-collapse {
-        width: 100%;
-        .nav-bar-links {
-            align-items: center;
+        display:flex;
+        width: 50%;
+        @media @tablet {
             width: 100%;
+        }
+        .nav-bar-links {
+            width:100%;
             display:flex;
-            justify-content: flex-end;
+            @media @tablet {
+                padding-bottom: 20px;
+                padding-right: 0;
+            }
             .nav-link-bar {
+                width: 60%;
                 display:flex;
-                flex-direction: row;
                 justify-content: flex-end;
-                margin-right: 20px;
-                width: 100%;
-                height: 100%;
-                a {
-                    &:hover {
-                        color: darken(teal, 10%);
-                    }
-                }
+                align-items: center;
                 @media @tablet {
                     display: flex;
                     flex-direction: column;
                     margin-right: 0px;
                     align-items: center;
+                    width: 100%;
                 }
                 
             }
             .career-urls {
                 display: flex;
-                width: 20%;
-                a {
-                    margin: 0px 10px;
-                    &:hover {
-                        color: darken(teal, 10%);
-                    }
-                }
+                align-items: center;
+                justify-content: space-evenly;
+                width: 25%;
                 @media @tablet {
-                    justify-content: center;
                     font-size: 1.5rem;
+                    width: 100%;
+
                 }
             }
-            
+
+            .switch-container{
+                width: 25%;
+                display: flex;
+                align-items: center;
+
+                @media @tablet {
+                    margin-top: 30px;
+                    width: 100%;
+                    justify-content: center;
+                }
+                label {
+                    margin-right: 10px;
+                    margin-top: 5px;
+                }
+                .day-switch {
+                    display:flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding-right: 10px;
+                    width: 100%;
+                    @media @tablet {
+                        width: 50%;
+                        justify-content: center;
+                    }
+                    .switch {
+                        display: flex;
+                        justify-content: center;
+                        align-items:center;
+                        border-radius: 50%;
+                        padding: 10px;
+                        cursor: pointer;
+                        @media @tablet {
+                            width: 50%;
+                            border-radius: 20px;
+                            height: 40px;
+                            padding: 0px;
+                        }
+                        p {
+                            display: none;
+                            width: 100%;
+                            height: 40px;
+                            margin-top: 30px;
+                            @media @tablet {
+                                display:flex;
+                                justify-content: center;
+                                align-self:center;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+
+    /* The switch - the box around the slider */
     
 }
-
-
-
 
