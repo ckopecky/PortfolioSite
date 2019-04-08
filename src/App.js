@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/index.css';
 import { Route, Switch } from 'react-router-dom'
 import Navigation from './components/Navbar/Navbar';
-import Landing from './components/Landing';
+import Landing from './components/Landing/Landing';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';

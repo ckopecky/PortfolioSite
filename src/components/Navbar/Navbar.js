@@ -15,6 +15,7 @@ import {
 } from "reactstrap";
 
 import "../../css/index.css";
+import Banner from './Banner';
 import DarkLightSwitch from "./DarkLightSwitch";
 
 class Navigation extends React.Component {
@@ -82,6 +83,7 @@ class Navigation extends React.Component {
                 </Nav>
             </Collapse> 
         </Navbar>
+        <Banner />
     </div>
     );
     }
