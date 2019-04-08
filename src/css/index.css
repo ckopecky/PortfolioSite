@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 body {
-  margin: 0 auto;
+  margin: 0 auto !important;
   max-width: 1800px;
   width: 100%;
   line-height: 1.54;
@@ -139,6 +139,7 @@ body {
   width: 100%;
 }
 .light-theme {
+  margin: 0 auto;
   background-color: #fff !important;
   color: #222;
 }
@@ -168,6 +169,7 @@ body {
   color: white;
 }
 .dark-theme {
+  margin: 0 auto;
   background-color: #292a2d !important;
   color: #a9a9b3 !important;
 }
@@ -211,6 +213,12 @@ body {
 @media (max-width: 767px) {
   .nav-bar-portfolio .nav-bar-brand {
     width: 85%;
+    padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .nav-bar-portfolio .nav-bar-brand {
+    width: 60%;
     padding: 0;
   }
 }
@@ -334,4 +342,7 @@ body {
     justify-content: center;
     align-self: center;
   }
+}
+.landing-container {
+  padding: 20px;
 }
