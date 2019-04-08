@@ -137,6 +137,7 @@ body {
   margin: 0 auto;
   max-width: 1800px;
   width: 100%;
+  height: 100vh;
 }
 .light-theme {
   margin: 0 auto;
@@ -168,6 +169,9 @@ body {
   background: #74407a;
   color: white;
 }
+.light-theme .container {
+  padding: 20px;
+}
 .dark-theme {
   margin: 0 auto;
   background-color: #292a2d !important;
@@ -197,6 +201,9 @@ body {
 .dark-theme .nav-bar-portfolio .switch {
   background: #80ffff;
   color: #212529;
+}
+.dark-theme .container {
+  padding: 20px;
 }
 .nav-bar-portfolio {
   display: flex;
@@ -342,7 +349,4 @@ body {
     justify-content: center;
     align-self: center;
   }
-}
-.landing-container {
-  padding: 20px;
 }
