@@ -2,7 +2,7 @@ import React from 'react';
  
 const LandingHero = (props) => {
     return (
-        <div className="landing-container">
+        <div style={{height: '100vh'}} className="landing-container">
             Landing Hero placeholder
         </div>
     );
