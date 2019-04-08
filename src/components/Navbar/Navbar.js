@@ -28,6 +28,7 @@ class Navigation extends React.Component {
   }
 
   toggleNavbar() {
+      console.log("toggled!", this.state)
     this.setState({
       collapsed: !this.state.collapsed
     });
@@ -64,14 +65,14 @@ class Navigation extends React.Component {
                         <NavLink href={twitterUrl}>
                             <i className="fab fa-twitter" />
                         </NavLink>
-                        <NavLink className="career-urls" href={githubUrl}>
+                        <NavLink href={githubUrl}>
                             <i className="fab fa-github" />
                         </NavLink>
                         <NavLink href={linkedInUrl}>
                             <i className="fab fa-linkedin" />
                         </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="switch-container">
                             <DarkLightSwitch
                             toggleDarkLight={this.props.toggleDarkLight}
                             day={this.props.day}
