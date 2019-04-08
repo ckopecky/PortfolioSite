@@ -127,6 +127,9 @@ table {
   border-spacing: 0;
 }
 body {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
   line-height: 1.54;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -279,20 +282,25 @@ body {
     width: 50%;
   }
 }
-.nav-bar-portfolio .navbar-collapse .switch {
+.nav-bar-portfolio .navbar-collapse .nav-bar-links .day-switch {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 10%;
-  height: 40px;
-  border-radius: 20px;
-  padding: 10px;
 }
 @media (max-width: 767px) {
-  .nav-bar-portfolio .navbar-collapse .switch {
-    width: 80%;
-    align-self: center;
-    margin: 0 auto;
+  .nav-bar-portfolio .navbar-collapse .nav-bar-links .day-switch {
+    margin-top: 30px;
+    width: 50%;
   }
+}
+.nav-bar-portfolio .navbar-collapse .nav-bar-links .day-switch label {
+  margin-right: 10px;
+}
+.nav-bar-portfolio .navbar-collapse .nav-bar-links .switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5%;
+  border-radius: 50%;
+  padding: 10px;
 }
