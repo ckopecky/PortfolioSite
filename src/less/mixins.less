@@ -1,0 +1,15 @@
+.hover-dark-theme(@fontcolor, @percentage) {
+    color: @darkcolor;
+    &:hover {
+        color: lighten(@fontcolor, @percentage);
+    }
+}
+
+.hover-light-theme(@fontcolor, @percentage) {
+    color: @lightcolor;
+    &:hover {
+        color: darken(@fontcolor, @percentage);
+    }
+}
+
+
