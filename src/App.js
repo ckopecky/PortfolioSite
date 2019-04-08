@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './css/index.css';
-// import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Navigation from './components/Navbar/Navbar';
-import LandingHero from './components/Landing-Hero';
+import Landing from './components/Landing';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Blog from './components/Blog';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +35,13 @@ class App extends Component {
           day={this.state.day}
           buttonLabel={this.state.buttonLabel}
         />
-        <LandingHero />
+        <Switch className="main-content">
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/blog" component={Blog} />
+        </Switch>
       </div>
     );
   }
