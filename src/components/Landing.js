@@ -2,7 +2,7 @@ import React from 'react';
 
 const Landing = (props) => {
     return (
-        <div style={{height: '100vh'}} className="landing-container">
+        <div className="container">
         Plan of Attack for Landing Page:<br/>
             >Banner <br/>
             >My Experience <br/>
