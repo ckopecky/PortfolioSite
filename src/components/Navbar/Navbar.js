@@ -35,55 +35,55 @@ class Navigation extends React.Component {
   render() {
     console.log(this.props, "props from nav");
     return (
-      <div>
-        <Navbar className="nav-bar-portfolio" expand="md">
-          <NavbarBrand href="/" className="mr-auto nav-bar-brand">
-            <span className="name-slug">Christina Kopecky</span>
-            <span className="mobile-name-slug">Christina K.</span>
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2">
-            <i className="fas fa-bars" />
-          </NavbarToggler>
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav className="nav-bar-links" navbar>
-              <div id="collapsed-nav-link-bar" className="nav-link-bar">
-                <NavItem>
-                  <NavLink href="/portfolio">Portfolio</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/resume">Resume</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/blog">Blog</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/contact">Contact</NavLink>
-                </NavItem>
-              </div>
-              <NavItem className="career-urls">
-                <NavLink href={twitterUrl}>
-                  <i className="fab fa-twitter" />
-                </NavLink>
-                <NavLink href={githubUrl}>
-                  <i className="fab fa-github" />
-                </NavLink>
-                <NavLink href={linkedInUrl}>
-                  <i className="fab fa-linkedin" />
-                </NavLink>
-              </NavItem>
-              
-            </Nav>
-            <DarkLightSwitch
-                toggleDarkLight={this.props.toggleDarkLight}
-                day={this.props.day}
-                buttonLabel={this.props.buttonLabel}
-            />
-          </Collapse>
-          
+        <div>
+            <Navbar className="nav-bar-portfolio" expand="md">
+                <NavbarBrand href="/" className="mr-auto nav-bar-brand">
+                    <span className="name-slug">Christina Kopecky</span>
+                    <span className="mobile-name-slug">Christina K.</span>
+                </NavbarBrand>
+                <NavbarToggler onClick={this.toggleNavbar} className="mr-2">
+                    <i className="fas fa-bars" />
+                </NavbarToggler>
+                <Collapse isOpen={!this.state.collapsed} navbar>
+                <Nav className="nav-bar-links" navbar>
+                    <div id="collapsed-nav-link-bar" className="nav-link-bar">
+                        <NavItem>
+                            <NavLink href="/portfolio">Portfolio</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/resume">Resume</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/blog">Blog</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/contact">Contact</NavLink>
+                        </NavItem>
+                    </div>
+                    <NavItem className="career-urls">
+                        <NavLink href={twitterUrl}>
+                            <i className="fab fa-twitter" />
+                        </NavLink>
+                        <NavLink className="career-urls" href={githubUrl}>
+                            <i className="fab fa-github" />
+                        </NavLink>
+                        <NavLink href={linkedInUrl}>
+                            <i className="fab fa-linkedin" />
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                            <DarkLightSwitch
+                            toggleDarkLight={this.props.toggleDarkLight}
+                            day={this.props.day}
+                            buttonLabel={this.props.buttonLabel}
+                            />
+                    </NavItem>
+                </Nav>
+            </Collapse> 
         </Navbar>
-      </div>
+    </div>
     );
-  }
+    }
 }
 
 export default Navigation;
