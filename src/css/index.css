@@ -169,6 +169,16 @@ body {
   background: #74407a;
   color: white;
 }
+.light-theme div {
+  margin-top: 0;
+  padding-top: 0;
+}
+.light-theme div .banner-container {
+  background-image: url("../img/sample_code_light.png");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
 .light-theme .container {
   padding: 20px;
 }
@@ -202,8 +212,21 @@ body {
   background: #80ffff;
   color: #212529;
 }
+.dark-theme div {
+  margin-top: 0;
+  padding-top: 0;
+}
+.dark-theme div .banner-container {
+  background-image: url("../img/sample_code_dark.png");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
 .dark-theme .container {
   padding: 20px;
+}
+.navbar {
+  margin-bottom: 0px !important;
 }
 .nav-bar-portfolio {
   display: flex;
