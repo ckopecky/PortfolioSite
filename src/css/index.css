@@ -176,16 +176,9 @@ body {
 .light-theme div .banner-container {
   background-image: url("../img/Screenshot-light.png");
   background-size: cover;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .light-theme div .banner-container .text-container {
-  width: 90%;
-  height: 80%;
-  background: pink;
+  background: rgba(255, 192, 103, 0.2);
 }
 .light-theme .container {
   padding: 20px;
@@ -227,16 +220,9 @@ body {
 .dark-theme div .banner-container {
   background-image: url("../img/Screenshot-dark.png");
   background-size: cover;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .dark-theme div .banner-container .text-container {
-  width: 90%;
-  height: 80%;
-  background: blue;
+  background: rgba(0, 0, 255, 0.2);
 }
 .dark-theme .container {
   padding: 20px;
@@ -375,4 +361,20 @@ body {
     height: 40px;
     padding: 0px;
   }
+}
+.banner-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.banner-container img {
+  height: 80%;
+  width: auto;
+}
+.banner-container .text-container {
+  width: 70%;
+  height: 80%;
 }
