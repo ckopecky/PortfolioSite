@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DarkLightSwitch = (props) => {
-    console.log(props, "props");
+    // console.log(props, "props");
     return (
         <div className="day-switch">
             <label>Mode:</label>

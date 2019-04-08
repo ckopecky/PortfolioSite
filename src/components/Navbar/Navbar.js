@@ -28,13 +28,13 @@ class Navigation extends React.Component {
   }
 
   toggleNavbar() {
-      console.log("toggled!", this.state)
+    //   console.log("toggled!", this.state)
     this.setState({
       collapsed: !this.state.collapsed
     });
   }
   render() {
-    console.log(this.props, "props from nav");
+    // console.log(this.props, "props from nav");
     return (
         <div>
             <Navbar className="nav-bar-portfolio" expand="md">

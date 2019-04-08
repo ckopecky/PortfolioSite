@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state, 'state')
+    // console.log(this.state, 'state')
     return (
       <div id="body" className={this.state.day ? "light-theme" : "dark-theme"}>
         <Navigation 
