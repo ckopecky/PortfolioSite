@@ -142,6 +142,8 @@ html[data-theme="Light"] body {
 }
 html[data-theme="Light"] body #root #body {
   color: #212529;
+  display: flex;
+  flex-direction: column;
 }
 html[data-theme="Light"] body #root #body .nav-bar-portfolio {
   background-color: #f8f9fa !important;
@@ -168,11 +170,24 @@ html[data-theme="Light"] body #root #body .nav-bar-portfolio .switch {
   background: #74407a;
   color: white;
 }
-html[data-theme="Light"] body #root #body div .banner-container .text-container {
+html[data-theme="Light"] body #root #body .main-content {
+  width: 80%;
+  height: auto;
+  align-self: center;
+  margin: 50px;
+  padding: 50px;
   background: rgba(218, 200, 175, 0.8) !important;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body div .banner-container .text-container button {
+html[data-theme="Light"] body #root #body .main-content .banner-container .text-container button {
+  background: #fff;
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .main-content .text-container {
+  background: #fff;
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .main-content .text-container button {
   background: #fff;
   color: #212529;
 }
@@ -186,6 +201,8 @@ html[data-theme="Dark"] body {
 }
 html[data-theme="Dark"] body #root #body {
   color: #a9a9b3;
+  display: flex;
+  flex-direction: column;
 }
 html[data-theme="Dark"] body #root #body .nav-bar-portfolio {
   background-color: #343a40 !important;
@@ -212,13 +229,26 @@ html[data-theme="Dark"] body #root #body .nav-bar-portfolio .switch {
   background: #80ffff;
   color: #212529;
 }
-html[data-theme="Dark"] body #root #body div .banner-container .text-container {
+html[data-theme="Dark"] body #root #body .main-content {
+  width: 80%;
+  height: auto;
+  align-self: center;
+  margin: 50px;
+  padding: 50px;
   background: rgba(0, 0, 102, 0.8);
   color: #a9a9b3;
 }
-html[data-theme="Dark"] body #root #body div .banner-container .text-container button {
+html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button {
   background: #414348;
   color: #ffffff;
+}
+html[data-theme="Dark"] body #root #body .main-content .text-container {
+  background: #292a2d;
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .text-container button {
+  background: #292a2d;
+  color: #a9a9b3;
 }
 .navbar {
   margin-bottom: 0px !important;
@@ -412,4 +442,13 @@ html[data-theme="Dark"] body #root #body div .banner-container .text-container b
   height: 40px;
   margin-top: 30px;
   border-radius: 20px;
+}
+.resume-container {
+  border-radius: 20px;
+}
+.resume-container .text-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 30px;
 }
