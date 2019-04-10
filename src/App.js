@@ -11,24 +11,29 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: '',
-      buttonLabel: ''
+      theme: "",
+      buttonLabel: ""
     }
     this.toggleDarkLight = this.toggleDarkLight.bind(this);
   }
 
   componentDidMount() {
     console.log(window.localStorage, "localStorage");
-    if(window.localStorage.Theme !== ""){
+    if(window.localStorage.getItem("Theme")){
       let theme = window.localStorage.getItem("Theme");
-      console.log(theme);
       this.setState({theme: theme, buttonLabel: theme === "Dark" ? "Light": "Dark"});
       console.log(this.state, "state after this.setState cdm");
     } else {
-      document.documentElement.setAttribute("data-theme", 'Light');
-      console.log(document.getElementsByTagName("html"))
-      this.setState({theme: 'Light', buttonLabel: 'Dark'})
+      if (this.state.theme === "" && this.state.buttonLabel === "") {
+        console.log("from the if statement")
+        const theme = "Light";
+        const buttonLabel = "Dark";
+        document.documentElement.setAttribute("data-theme", theme);
+        console.log(document.getElementsByTagName("html"))
+        this.setState({theme: theme, buttonLabel: buttonLabel})
       window.localStorage.setItem("Theme", this.state.theme);
+      }
+
     }
   }
 
