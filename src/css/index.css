@@ -130,70 +130,62 @@ body {
   margin: 0 auto !important;
   max-width: 1800px !important;
   width: 100%;
+  height: 100vh;
   line-height: 1.54;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: inherit;
   background-color: inherit;
 }
-html[data-theme="Light"] {
-  background-color: #fff !important;
-  color: #212529;
-}
-html[data-theme="Light"] #body {
-  background: #fff;
-  color: #212529;
+html[data-theme="Light"] body {
   background-image: url("../img/Screenshot-light.png");
   background-size: cover;
-  height: 100vh;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio {
+html[data-theme="Light"] body #root #body {
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .nav-bar-portfolio {
   background-color: #f8f9fa !important;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio a {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio a {
   color: #212529;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio a:hover {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio a:hover {
   color: #00afaf;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio .nav-bar-links .nav-link-bar a {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio .nav-bar-links .nav-link-bar a {
   color: #212529;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio .nav-bar-links .nav-link-bar a:hover {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio .nav-bar-links .nav-link-bar a:hover {
   color: #00afaf;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio .nav-bar-links .career-links a {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio .nav-bar-links .career-links a {
   color: #212529;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio .nav-bar-links .career-links a:hover {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio .nav-bar-links .career-links a:hover {
   color: #00afaf;
 }
-html[data-theme="Light"] #body .nav-bar-portfolio .switch {
+html[data-theme="Light"] body #root #body .nav-bar-portfolio .switch {
   background: #74407a;
   color: white;
 }
-html[data-theme="Light"] #body div {
-  margin-top: 0;
-  padding-top: 0;
-}
-html[data-theme="Light"] #body div .banner-container .text-container {
+html[data-theme="Light"] body #root #body div .banner-container .text-container {
   background: rgba(218, 200, 175, 0.8) !important;
   color: #212529;
 }
-html[data-theme="Light"] #body div .banner-container .text-container button {
+html[data-theme="Light"] body #root #body div .banner-container .text-container button {
   background: #fff;
   color: #212529;
 }
 html[data-theme="Dark"] {
-  width: 100%;
   background-color: #292a2d !important;
   color: #a9a9b3 !important;
 }
-html[data-theme="Dark"] body #root #body {
-  background-color: #292a2d;
-  color: #a9a9b3;
+html[data-theme="Dark"] body {
   background-image: url("../img/Screenshot-dark.png");
   background-size: cover;
-  height: 100vh;
+}
+html[data-theme="Dark"] body #root #body {
+  color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .nav-bar-portfolio {
   background-color: #343a40 !important;
@@ -219,10 +211,6 @@ html[data-theme="Dark"] body #root #body .nav-bar-portfolio .nav-bar-links .care
 html[data-theme="Dark"] body #root #body .nav-bar-portfolio .switch {
   background: #80ffff;
   color: #212529;
-}
-html[data-theme="Dark"] body #root #body div {
-  margin-top: 0;
-  padding-top: 0;
 }
 html[data-theme="Dark"] body #root #body div .banner-container .text-container {
   background: rgba(0, 0, 102, 0.8);
@@ -369,68 +357,54 @@ html[data-theme="Dark"] body #root #body div .banner-container .text-container b
 }
 .container-landing .banner-container {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
 }
-@media (max-width: 1400px) {
-  .container-landing .banner-container {
-    align-items: stretch;
-    width: 100%;
-    padding: 0;
-  }
-}
-.container-landing .banner-container img {
-  display: none;
-  height: 80%;
-  width: auto;
-}
-@media (max-width: 1400px) {
-  .container-landing .banner-container img {
-    display: none;
-  }
-}
 .container-landing .banner-container .text-container {
+  width: 80%;
   padding: 30px;
   font-family: 'Raleway';
   display: flex;
   flex-direction: row-reverse;
-}
-@media (max-width: 1400px) {
-  .container-landing .banner-container .text-container {
-    width: 100%;
-    height: 50%;
-  }
+  align-items: center;
 }
 .container-landing .banner-container .text-container img {
   display: flex;
+  align-self: flex-start;
   border-radius: 50%;
-  width: 200px;
   height: 300px;
   margin: 20px;
-}
-@media (max-width: 1400px) {
-  .container-landing .banner-container .text-container img {
-    display: flex;
-  }
 }
 @media (max-width: 1100px) {
   .container-landing .banner-container .text-container img {
     display: none;
   }
 }
-.container-landing .banner-container .text-container .carat {
+.container-landing .banner-container .text-container .text-block {
+  width: calc(100% - 200px);
+  padding: 10px;
+}
+@media (max-width: 1100px) {
+  .container-landing .banner-container .text-container .text-block {
+    width: 100%;
+  }
+}
+.container-landing .banner-container .text-container .text-block .carat {
   font-size: 1.6rem;
   font-weight: 700;
 }
-.container-landing .banner-container .text-container p {
+.container-landing .banner-container .text-container .text-block h1 {
+  padding-top: 30px;
+}
+.container-landing .banner-container .text-container .text-block p {
+  padding: 10px;
   font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: 400;
 }
-.container-landing .banner-container .text-container button {
+.container-landing .banner-container .text-container .text-block button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,23 +412,4 @@ html[data-theme="Dark"] body #root #body div .banner-container .text-container b
   height: 40px;
   margin-top: 30px;
   border-radius: 20px;
-}
-.container-landing {
-  background: inherit;
-}
-.container-landing .banner-container {
-  background: inherit;
-}
-.container-landing .banner-container .text-container {
-  width: 80%;
-  height: 80vh;
-}
-.container-landing .banner-container .text-container div {
-  padding: 30px;
-}
-.container-landing .banner-container .text-container div h1 {
-  margin: 20px 0px;
-}
-.container-landing .banner-container .text-container div p {
-  margin: 20px 0px;
 }
