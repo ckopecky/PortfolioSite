@@ -17,12 +17,19 @@ class App extends Component {
     this.toggleDarkLight = this.toggleDarkLight.bind(this);
   }
 
-  toggleDarkLight(){
-    if(this.state.day === true && this.state.buttonLabel === "Dark Mode") {
-      this.setState({day: false, buttonLabel: 'Light Mode'});
+  componentDidMount() {
+    console.log(window.localStorage, "localStorage");
+    if(window.localStorage.Theme !== ""){
+      let theme = window.localStorage.getItem("Theme");
+      console.log(theme);
+      this.setState({theme: theme, buttonLabel: theme === "Dark" ? "Light": "Dark"});
+      console.log(this.state, "state after this.setState cdm");
+    } else {
+      document.documentElement.setAttribute("data-theme", 'Light');
+      console.log(document.getElementsByTagName("html"))
+      this.setState({theme: 'Light', buttonLabel: 'Dark'})
+      window.localStorage.setItem("Theme", this.state.theme);
     }
-    else if(this.state.day === false && this.state.buttonLabel === "Light Mode"){
-      this.setState({day: true, buttonLabel: 'Dark Mode'})
     }
   }
 
