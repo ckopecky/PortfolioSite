@@ -10,7 +10,7 @@ class Resume extends React.Component {
     render() {
         return(
             <div className="main-content resume-container">
-                <div className="text-container">
+                <div className="text-container-resume">
                     <h1>Christina M. Kopecky</h1>
                     <section className="contact-info">
                         GitHub: ckopecky | 
