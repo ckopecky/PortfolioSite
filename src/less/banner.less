@@ -1,64 +1,57 @@
 .container-landing {
     .banner-container {
         width: 100%;
-        height: 100vh;
         display:flex;
         justify-content: center;
         align-items: center;
         padding: 30px;
-        @media @desktop2 {
-            align-items: stretch;
-            width: 100%;
-            padding: 0;
-        }
-        img {
-            display: none;
-            height: 80%;
-            width: auto;
-            @media @desktop2 {
-               display: none;
-            }
-        }
         .text-container {
+            width: 80%;
             padding: 30px;
             font-family: 'Raleway';
             display:flex;
             flex-direction: row-reverse;
-            @media @desktop2 {
-                width: 100%;
-                height: 50%;
-            }
+            align-items: center;
             img {
                 display: flex;
+                align-self: flex-start;
                 border-radius: 50%;
-                width: 200px;
                 height: 300px;
                 margin: 20px;
-                @media @desktop2 {
-                    display: flex;
-                }
                 @media @desktop3 {
                     display: none;
                 }
             }
-            .carat {
-                font-size: 1.6rem;
-                font-weight: 700;
-            }
-            p {
-                font-size: 1.5rem;
-                font-family: 'Roboto';
-                font-weight: 400;
-            }
 
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 50%;
-                height: 40px;
-                margin-top: 30px;
-                border-radius: 20px;
+            .text-block {
+                width: calc(100% - 200px);
+                padding: 10px;
+                @media @desktop3 {
+                    width: 100%;
+                }
+                .carat {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+                h1 {
+                    padding-top: 30px;
+                }
+                p {
+                    padding: 10px;
+                    font-size: 1.5rem;
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                }
+    
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 40px;
+                    margin-top: 30px;
+                    border-radius: 20px;
+                }
             }
         }
     }    
