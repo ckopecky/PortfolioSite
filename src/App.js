@@ -11,28 +11,42 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      day: false,
-      buttonLabel: 'Light Mode'
+      theme: '',
+      buttonLabel: ''
     }
     this.toggleDarkLight = this.toggleDarkLight.bind(this);
   }
 
-  toggleDarkLight(){
-    if(this.state.day === true && this.state.buttonLabel === "Dark Mode") {
-      this.setState({day: false, buttonLabel: 'Light Mode'});
-    }
-    else if(this.state.day === false && this.state.buttonLabel === "Light Mode"){
-      this.setState({day: true, buttonLabel: 'Dark Mode'})
+  componentDidMount() {
+    console.log(window.localStorage, "localStorage");
+    if(window.localStorage.Theme !== ""){
+      let theme = window.localStorage.getItem("Theme");
+      console.log(theme);
+      this.setState({theme: theme, buttonLabel: theme === "Dark" ? "Light": "Dark"});
+      console.log(this.state, "state after this.setState cdm");
+    } else {
+      document.documentElement.setAttribute("data-theme", 'Light');
+      console.log(document.getElementsByTagName("html"))
+      this.setState({theme: 'Light', buttonLabel: 'Dark'})
+      window.localStorage.setItem("Theme", this.state.theme);
     }
   }
 
+  toggleDarkLight(){
+    const theme = this.state.theme === "Dark" ? "Light" : "Dark";
+    const buttonLabel = this.state.buttonLabel === "Dark" ? "Light" : "Dark";
+    console.log(theme, document.getElementsByTagName("html"));
+    this.setState({ theme: theme, buttonLabel:  buttonLabel });
+    window.localStorage.setItem("Theme", theme)
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
   render() {
-    // console.log(this.state, 'state')
+    console.log(this.state, 'state')
     return (
-      <div id="body" className={this.state.day ? "light-theme" : "dark-theme"}>
+      <div id="body">
         <Navigation 
           toggleDarkLight={this.toggleDarkLight}
-          day={this.state.day}
           buttonLabel={this.state.buttonLabel}
         />
         <Switch className="main-content">

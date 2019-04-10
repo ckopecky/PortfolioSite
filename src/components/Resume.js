@@ -1,15 +1,23 @@
 import React from 'react';
 
-const Resume = () => {
-    return (
-        <div className="container">
-            Plan of attack for Resume  page:
+class Resume extends React.Component {
 
-            > mark up resume and post <br/>
-            > Provide ability to download resume in PDF format<br/>
+    componentDidMount() {
+            if(window.localStorage.Theme) {
+                document.documentElement.setAttribute("data-theme", window.localStorage.Theme);
+            }
+    }
+    render() {
+        return(
+            <div className="container">
+                Plan of attack for Resume  page:
 
-        </div>
-    );
+                > mark up resume and post <br/>
+                > Provide ability to download resume in PDF format<br/>
+
+            </div>
+        );
+    }
 };
 
 export default Resume;
