@@ -10,7 +10,7 @@ class Contact extends React.Component {
     
     render(){
         return (
-            <div className="container">
+            <div className="main-content contact-container">
                 Plan of Attack for Contact:
     
                 checkout netlify forms <br/>

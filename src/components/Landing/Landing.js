@@ -10,7 +10,7 @@ class Landing extends React.Component {
     }
     render(){
         return (
-            <div className="container-landing">
+            <div className="main-content container-landing">
             {/* Plan of Attack for Landing Page:<br/>
                 >Banner <br/>
                 >My Experience <br/>

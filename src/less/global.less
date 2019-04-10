@@ -16,6 +16,8 @@ html[data-theme="Light"]{
 		#root{
 			#body {
 				color: @lightcolor;
+				display: flex;
+				flex-direction: column;
 				.nav-bar-portfolio {
 					background-color: @lightnav !important;
 					a {
@@ -38,15 +40,29 @@ html[data-theme="Light"]{
 						color: white;
 					}
 				}
-				div {
+				.main-content {
+					width: 80%;
+					height: auto;
+					align-self: center;
+					margin: 50px;
+					padding: 50px;
+					background: rgba(218, 200, 175, 0.8) !important; 
+					color: @lightcolor;
 					.banner-container {
 						.text-container {
-							background: rgba(218, 200, 175, 0.8) !important; 
-							color: @lightcolor;
 							button {
 								background: @lightbg;
 								color: @lightcolor;
 							}
+						}
+					}
+
+					.text-container {
+						background: @lightbg;
+						color: @lightcolor;
+						button {
+							background: @lightbg;
+							color: @lightcolor;
 						}
 					}
 				}
@@ -54,6 +70,7 @@ html[data-theme="Light"]{
 		}
 	}
 }
+
 html[data-theme="Dark"] {
 	background-color: @darkbg !important;
 	color: @darkcolor !important;
@@ -63,6 +80,8 @@ html[data-theme="Dark"] {
 		#root {
 			#body {
 				color: @darkcolor;
+				display: flex;
+				flex-direction: column;
 				.nav-bar-portfolio {
 					background-color: @darknav !important;
 					a {
@@ -85,15 +104,29 @@ html[data-theme="Dark"] {
 						color: @lightcolor;
 					}
 				}
-				div {
+				.main-content {
+					width: 80%;
+					height: auto;
+					align-self: center;
+					margin: 50px;
+					padding: 50px;
+					background: darken(rgba(0, 0, 255, .8), 30%);
+					color: @darkcolor;
 					.banner-container {
 						.text-container {
-							background: darken(rgba(0, 0, 255, .8), 30%);
-							color: @darkcolor;
+							
 							button {
 								background: lighten(@darkbg, 10%);
 								color: lighten(@darkcolor, 50%);
 							}
+						}
+					}
+					.text-container {
+						background: @darkbg;
+						color: @darkcolor;
+						button {
+							background: @darkbg;
+							color: @darkcolor;
 						}
 					}
 				}

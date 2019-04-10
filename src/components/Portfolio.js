@@ -16,7 +16,7 @@ class Portfolio extends React.Component {
 
     render(){
         return (
-            <div className="container">
+            <div className="main-content portfolio-container">
                 Plan of Attack for Portfolio<br/><br/>
                 cards that display:<br/>
                 <ul style={{listStyle:"disc", padding: '0px 40px'}}>
