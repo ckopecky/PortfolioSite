@@ -367,9 +367,6 @@ html[data-theme="Dark"] body #root #body div .banner-container .text-container b
     padding: 0px;
   }
 }
-.nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch #button-label-big {
-  margin-right: 3px;
-}
 .container-landing .banner-container {
   width: 100%;
   height: 100vh;
