@@ -11,8 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      day: false,
-      buttonLabel: 'Light Mode'
+      theme: '',
+      buttonLabel: ''
     }
     this.toggleDarkLight = this.toggleDarkLight.bind(this);
   }
