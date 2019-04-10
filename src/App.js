@@ -7,6 +7,8 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
+import Preview from './components/previewpic';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -49,6 +51,7 @@ class App extends Component {
   render() {
     console.log(this.state, 'state')
     return (
+      <>
       <div id="body">
         <Navigation 
           toggleDarkLight={this.toggleDarkLight}
@@ -62,6 +65,8 @@ class App extends Component {
           <Route exact path="/blog" component={Blog} />
         </Switch>
       </div>
+      <Route exact path="/previewpic" component={Preview} />
+      </>
     );
   }
 }
