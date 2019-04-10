@@ -5,10 +5,9 @@ import ProfilePic from "../../img/profilepic.jpg";
 const Banner = () => {
     return (
         <div className="banner-container">
-            <img src={ProfilePic} alt="Christina Kopecky Profile"/>
             <div className="text-container">
                 <img src={ProfilePic} alt="circle-profile"/>
-                <div>
+                <div className="text-block">
                     <h1><span className="carat">></span> Hi! I'm Christina Kopecky.</h1>
                     <p><span className="carat">></span> I'm a full-stack web developer, professional flutist and flute teacher that lives in San Jose, California. I started studying Full-Stack Web Development, UX, and Computer Science in 2018 with the hope that I can change the focus of my career! </p>
                     <br/>
