@@ -57,7 +57,7 @@ class App extends Component {
           toggleDarkLight={this.toggleDarkLight}
           buttonLabel={this.state.buttonLabel}
         />
-        <Switch className="main-content">
+        <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/contact" component={Contact} />

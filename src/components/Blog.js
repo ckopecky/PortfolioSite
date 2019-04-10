@@ -10,7 +10,7 @@ class Blog extends React.Component {
 
     render(){
         return (
-            <div className="container">
+            <div className="main-content blog-container">
                 ** This is not for Version 1 ** <br/>
                 Plan of Attack for Blog <br />
                 > Blog Name <br/>
