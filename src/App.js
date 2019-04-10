@@ -31,12 +31,20 @@ class App extends Component {
       window.localStorage.setItem("Theme", this.state.theme);
     }
     }
+
+  toggleDarkLight(){
+    const theme = this.state.theme === "Dark" ? "Light" : "Dark";
+    const buttonLabel = this.state.buttonLabel === "Dark" ? "Light" : "Dark";
+    console.log(theme, document.getElementsByTagName("html"));
+    this.setState({ theme: theme, buttonLabel:  buttonLabel });
+    window.localStorage.setItem("Theme", theme)
+    document.documentElement.setAttribute("data-theme", theme);
   }
 
   render() {
-    // console.log(this.state, 'state')
+    console.log(this.state, 'state')
     return (
-      <div id="body" className={this.state.day ? "light-theme" : "dark-theme"}>
+      <div id="body">
         <Navigation 
           toggleDarkLight={this.toggleDarkLight}
           day={this.state.day}
