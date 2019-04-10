@@ -385,6 +385,9 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume bu
     padding: 0px;
   }
 }
+.container-landing {
+  border-radius: 20px;
+}
 .container-landing .banner-container {
   width: 100%;
   display: flex;
