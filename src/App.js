@@ -47,7 +47,6 @@ class App extends Component {
       <div id="body">
         <Navigation 
           toggleDarkLight={this.toggleDarkLight}
-          day={this.state.day}
           buttonLabel={this.state.buttonLabel}
         />
         <Switch className="main-content">
