@@ -13,31 +13,42 @@ class Resume extends React.Component {
                 <div className="text-container-resume">
                     <h1>Christina M. Kopecky</h1>
                     <section className="contact-info">
-                        GitHub: ckopecky | 
-                        LinkedIn: linkedin.com/in/cmvnk
+                        <span><a href="http://www.github.com/ckopecky" title="Github: ckopecky" target="_blank" rel="noopener noreferrer">GitHub</a></span>{` | ` }
+                        <span><a href="http://linkedin.com/in/cmvnk" title="LinkedIn:Christina Kopecky">LinkedIn</a></span>
                     </section>
                     <section className="tech-skills">
-                    <h3>SKILLS</h3>
-                    HTML | CSS | JavaScript | React | MongoDB | Node | Express | Python | C
+                    <span><strong>SKILLS:</strong></span> { `  `}
+                    <span>HTML | CSS | JavaScript | React | MongoDB | Node | Express | Python | C</span>
                     </section>
                     <section className="recent-projects">
-                    <h3>PROJECTS</h3>
-                    <div>
-                        <h4>CineView</h4>
-                        <p>An app designed to let users find reviews on movies and write those reviews if a premium subscriber</p>
-                        PostgreSQL | Express | React | Node
-                        Implemented 0Auth to authenticate users.
-                        Integrated The Movie Database (TMDB) API to retrieve and search film data from a library of over 450,000 films.
-                        Designed landing page with user experience in mind. 
-                        GitHub Repo:  http://github.com/ckopecky/labs10-movie-reviews
+                        <h3>PROJECTS</h3>
+                        <div className="single-project" id="cineview">
+                            <h4>
+                                <a href="https://cineview.netlify.com" title="CineView: Real People, Real Reviews" target="_blank" rel="noopener noreferrer">CineView</a>
+                            </h4>
+                            <hr/>
+                            <p>An app designed to let users find reviews on movies and write those reviews if a premium subscriber</p>
+                            <span><strong>{`Tech Stack: `}</strong></span><span>PostgreSQL | Express | React | Node</span>
+                            <ul className="responsibilities">
+                                <li>Implemented 0Auth to authenticate users.</li>
+                                <li>Integrated The Movie Database (TMDB) API to retrieve and search film data from a library of over 450,000 films.</li>
+                                <li>Designed landing page with user experience in mind. </li>
+                            </ul>
+                            <strong>{`GitHub Repo: `}</strong><a href="http://github.com/ckopecky/labs10-movie-reviews" title="Github Repo: Cineview" target="_blank" rel="noopener noreferrer">CineView on Github</a>
                     </div>
-                    <div>
-                        <h4>Lambda Notes</h4>
+                    <div className="single-project" id="lambda-notes">
+                        <h4>
+                            <a href="https://notepen.netlify.com" title="Lambda Notes: Project Weeks at Lambda School" target="_blank" rel="noopener noreferrer">Lambda Notes</a>
+                        </h4>        
+                        <hr/>                
                         <p>An app that allows anyone to read, create, update or delete a note.</p>
-                        MongoDB | Express | React | Node
-                        Followed client specifications to implement logic for client’s notes application.
-                        Github Repo: http://github.com/ckopecky/front-end-project-week
-                        Client Mockups: http://tinyurl.com/y32wgsxw
+                        <span><strong>{`Tech Stack: `}</strong></span><span>MongoDB | Express | React | Node</span>
+                        <ul className="responsibilities">
+                            <li>Followed client specifications to implement logic for client’s notes application.</li>
+                        </ul>
+                        <strong>{`GitHub Repo: `}</strong><a href="http://github.com/ckopecky/front-end-project-week" title="Lambda Notes: Project Weeks at Lambda School" target="_blank" rel="noopener noreferrer">Lambda Notes on Github</a>
+                        <br/>
+                        <strong>{`Client Mockups: `}</strong><a href="http://tinyurl.com/y32wgsxw" title="Client Mockups for Lambda Notes" target="_blank" rel="noopener noreferrer">Client Mockups on Github</a>
                     </div>
                     </section>
                     <section className="work-experience">
