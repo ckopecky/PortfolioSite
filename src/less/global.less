@@ -66,6 +66,12 @@ html[data-theme="Light"]{
 							background: @lightbg;
 							color: @lightcolor;
 						}
+
+						.recent-projects {
+							hr{
+								background-color: lighten(@lightcolor, 70%);
+							}
+						}
 					}
 				}
 			}
@@ -131,6 +137,11 @@ html[data-theme="Dark"] {
 						button {
 							background: @darkbg;
 							color: @darkcolor;
+						}
+						.recent-projects {
+							hr{
+								background-color: darken(@darkcolor, 30%);
+							}
 						}
 					}
 				}
