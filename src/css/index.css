@@ -192,6 +192,9 @@ html[data-theme="Light"] body #root #body .main-content .text-container-resume b
   background: #fff;
   color: #212529;
 }
+html[data-theme="Light"] body #root #body .main-content .text-container-resume .recent-projects hr {
+  background-color: #d3d8dc;
+}
 html[data-theme="Dark"] {
   background-color: #292a2d !important;
   color: #a9a9b3 !important;
@@ -251,6 +254,9 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume {
 html[data-theme="Dark"] body #root #body .main-content .text-container-resume button {
   background: #292a2d;
   color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .text-container-resume .recent-projects hr {
+  background-color: #5b5b68;
 }
 .navbar {
   margin-bottom: 0px !important;
@@ -453,4 +459,21 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume bu
   height: 100%;
   border-radius: 20px;
   padding: 30px;
+  font-family: 'Raleway';
+}
+.resume-container .text-container-resume h1 {
+  text-align: center;
+}
+.resume-container .text-container-resume .contact-info,
+.resume-container .text-container-resume .tech-skills {
+  text-align: center;
+  margin: 20px;
+}
+.resume-container .text-container-resume .recent-projects .single-project {
+  margin: 20px;
+}
+.resume-container .text-container-resume .recent-projects .single-project .responsibilities {
+  list-style-type: disc;
+  margin-top: 20px;
+  margin-left: 30px;
 }
