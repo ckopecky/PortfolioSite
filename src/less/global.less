@@ -48,6 +48,8 @@ html[data-theme="Light"]{
 					padding: 50px;
 					background: rgba(218, 200, 175, 0.8) !important; 
 					color: @lightcolor;
+					border-radius: 20px;
+
 					.banner-container {
 						.text-container {
 							button {
@@ -57,12 +59,18 @@ html[data-theme="Light"]{
 						}
 					}
 
-					.text-container {
+					.text-container-resume {
 						background: @lightbg;
 						color: @lightcolor;
 						button {
 							background: @lightbg;
 							color: @lightcolor;
+						}
+
+						.recent-projects {
+							hr{
+								background-color: lighten(@lightcolor, 70%);
+							}
 						}
 					}
 				}
@@ -112,6 +120,8 @@ html[data-theme="Dark"] {
 					padding: 50px;
 					background: darken(rgba(0, 0, 255, .8), 30%);
 					color: @darkcolor;
+					border-radius: 20px;
+
 					.banner-container {
 						.text-container {
 							
@@ -121,12 +131,17 @@ html[data-theme="Dark"] {
 							}
 						}
 					}
-					.text-container {
+					.text-container-resume {
 						background: @darkbg;
 						color: @darkcolor;
 						button {
 							background: @darkbg;
 							color: @darkcolor;
+						}
+						.recent-projects {
+							hr{
+								background-color: darken(@darkcolor, 30%);
+							}
 						}
 					}
 				}
