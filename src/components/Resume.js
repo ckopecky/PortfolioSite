@@ -1,4 +1,6 @@
 import React from 'react';
+import PDF from '../img/Kopecky_Christina_Resume.pdf';
+import PDFImage from '../img/PDF_24.png';
 
 class Resume extends React.Component {
 
@@ -10,6 +12,9 @@ class Resume extends React.Component {
     render() {
         return(
             <div className="main-content resume-container">
+                <div className="download-resume">
+                    <a href={PDF} download="Kopecky_Christina_Resume.pdf"><img src={PDFImage} alt="pdf-icon"/> Download a PDF of Resumé</a>
+                </div>
                 <div className="text-container-resume">
                     <h1>Christina M. Kopecky</h1>
                     <section className="contact-info">
@@ -53,52 +58,76 @@ class Resume extends React.Component {
                     </section>
                     <section className="work-experience">
                         <h3>WORK EXPERIENCE</h3>
-                        <div>
-                            Teaching Assistant for Evening Full Stack Web Development	 February 2019 - Present
-                            Lambda School
-                            Lead guided web development projects twice a week to about a dozen students.
-                            Facilitate standup meetings twice a week for a team of developers going through the curriculum to get a sense of their progress. 
-                            Assess student progress at frequent intervals and lead 1:1 meetings with individual students to provide feedback and evaluate student’s sprint challenges. 
+                        <div className="single-work-experience" id="teaching-assistant-lambda">
+                            <div className="title-date">
+                                <h5>Teaching Assistant for Evening Full Stack Web Development (WEBPT5)</h5>	 
+                                <span>February 2019 - Present</span>
+                            </div>
+                            <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h6>Lambda School</h6></a>
+                            <ul className="responsibilities">
+                                <li>Lead guided web development projects twice a week to about a dozen students.</li>
+                                <li>Facilitate standup meetings twice a week for a team of developers going through the curriculum to get a sense of their progress.</li>
+                                <li>Assess student progress at frequent intervals and lead 1:1 meetings with individual students to provide feedback and evaluate student’s sprint challenges.</li>
+                            </ul>
                         </div>
-                        <div>
-                            Section Lead for User Experience  (UX1) 		   	         October 2018-February 2019
-                            Lambda School
-                            Attended and recorded all lectures for the cohort to use at a later date.Led standup meetings for UX students every afternoon to assess progress and collect feedback about the program.
+                        <div className="single-work-experience" id="section-lead-lambda">
+                            <div className="title-date">
+                                <h5>Section Lead for User Experience  (UX1)</h5>
+                                <span>October 2018-February 2019</span>
+                            </div>
+                            <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h6>Lambda School</h6></a>                            <ul className="responsibilities">
+                                <li>Attended and recorded all lectures for the cohort to use at a later date.</li>
+                                <li>Led standup meetings for UX students every afternoon to assess progress and collect feedback about the program.</li>
+                            </ul>
                         </div>
-                        <div>
-                            Flute Instructor 							                 January 2001-Present
-                            Self-employed
-                            Gave critical ear to student performances and provided constructive criticism, encouragement  and praise when it was warranted
-                            Planned lessons and objectives appropriate for student’s level and assigned music that would fulfill those objectives, reminiscent of AGILE method
-                            Communicated with parents and other teachers to organize studio recitals as well as other administrative responsibilities. 
+                        <div className="single-work-experience" id="flute-instructor">
+                            <div className="title-date">
+                                <h5>Flute Instructor</h5> 							 <span>January 2001-Present</span>
+                            </div>
+                            <h6>Self-Employed</h6>
+                            <ul className="responsibilities">
+                                <li>Gave critical ear to student performances and provided constructive criticism, encouragement  and praise when it was warranted</li>
+                                <li>Planned lessons and objectives appropriate for student’s level and assigned music that would fulfill those objectives, reminiscent of AGILE method</li>
+                                <li>Communicated with parents and other teachers to organize studio recitals as well as other administrative responsibilities.</li>
+                            </ul>
                         </div>
-                        <div>
-                            Program Assistant (2007-2013)				                 September 2007-May 2013 
-                            Kansas Public Radio (Lawrence, KS)
-                            Local host of NPR’s Weekend Edition Sunday (2007-2013)
-                            Prepared newscasts for broadcast
-                            Utilized a web-based content management system to prepare and to edit regional news headlines and classical music playlists
-                            Prepared, programmed and hosted classical music shows four evenings a week (2008-2011)
-                            Assisted in entering new files and maintaining music library database of about 10,000 classical music CDs using Music Librarian – a content management system (2008-2011)
+                        <div className="single-work-experience" id="radio-announcer">
+                            <div className="title-date">
+                                <h5>Program Assistant</h5>				             <span>September 2007-May 2013</span>
+                            </div>
+                            <a href="http://kansaspublicradio.org/" title="Kansas Public Radio" target="_blank" rel="noopener noreferrer"><h6>Kansas Public Radio (Lawrence, KS)</h6></a>                            <ul className="responsibilities">
+                                <ul><strong><span>Local host of NPR’s Weekend Edition Sunday</span></strong><span>(2007-2013)</span>
+                                    <li>Prepared newscasts for broadcast</li>
+                                    <li>Utilized a web-based content management system to prepare and to edit regional news headlines and classical music playlists</li>
+                                </ul>
+                                <ul><strong><span>Classical Music Host</span></strong><span>(2008-2011)</span>
+                                    <li>Prepared, programmed and hosted classical music shows four evenings a week</li>
+                                    <li>Assisted in entering new files and maintaining music library database of about 10,000 classical music CDs using Music Librarian – a content management system</li>
+                                </ul>
+                            </ul>
                         </div>
                     </section>
                     <section className="education">
                         <h3>EDUCATION</h3>
-                        <div>
-                            Lambda School		
-                            Lambda School is a 7+ month Computer Science & Software Engineering Academy that provides an immersive (full-time, 40+ hours/week) hands-on curriculum with a focus on computer science, software engineering, and web development.
+                        <div className="single-education-experience" id="lambda-school">
+                            <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h5>Lambda School</h5></a>                                <ul className="responsibilities">	
+                                <li>Lambda School is a 7+ month Computer Science &  Software Engineering Academy that provides an immersive (full-time, 40+ hours/week) hands-on curriculum with a focus on computer science, software engineering, and web development.
+                                </li>
+                            </ul>
                         </div>
-                        <div>
-                            University of Kansas
-                            Master of Music in Flute Performance
+                        <div className="single-education-experience" id="university-kansas">
+                            <a href="http://music.ku.edu" title="The University of Kansas School of Music" target="_blank" rel="noopener noreferrer"><h5>The University of Kansas</h5></a>    
+                            <ul className="responsibilities">
+                                <li>Master of Music in Flute Performance</li>
+                            </ul>
                         </div>
-                        <div>
-                            Southeast MO State Univ
-                            Bachelor of Arts with a major in Music (Flute)
-                            Minors: Mass Communication and French
+                        <div className="single-education-experience" id="southeast-mo-state">
+                            <a href="https://semo.edu/music/" title="Southeast Missouri State University Dept of Music" target="_blank" rel="noopener noreferrer"><h5>Southeast Missouri State University</h5></a>                                <ul className="responsibilities">
+                                <li>Bachelor of Arts with a major in Music (Flute)</li>
+                                <li>Minors: Mass Communication and French</li>
+                            </ul>
                         </div>
                     </section>
-                    > Provide ability to download resume in PDF format<br/>
                 </div>
             </div>
         );
