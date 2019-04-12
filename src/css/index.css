@@ -207,7 +207,7 @@ html[data-theme="Light"] body #root #body .main-content .download-resume {
 }
 @media (max-width: 400px) {
   html[data-theme="Light"] body #root #body .main-content .download-resume {
-    background: inherit;
+    background: transparent;
     border-radius: 20px;
   }
 }
@@ -334,13 +334,12 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .nav-bar-brand {
-    width: 85%;
+    width: 60%;
     padding: 0;
   }
 }
 @media (max-width: 400px) {
   .nav-bar-portfolio .nav-bar-brand {
-    width: 60%;
     padding: 0;
   }
 }
@@ -363,21 +362,25 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 }
 .nav-bar-portfolio .navbar-collapse {
   display: flex;
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links {
   width: 100%;
   display: flex;
+  align-self: center;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links {
     padding-bottom: 20px;
     padding-right: 0;
+    margin: 0px;
   }
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .nav-link-bar {
@@ -391,7 +394,6 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
     display: flex;
     flex-direction: column;
     margin-right: 0px;
-    align-items: center;
     width: 100%;
   }
 }
@@ -441,15 +443,19 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  width: 50%;
+  width: 80%;
   cursor: pointer;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
-    width: 50%;
-    border-radius: 20px;
+    width: 80%;
     height: 40px;
     padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
+    width: 50%;
   }
 }
 .container-landing {
