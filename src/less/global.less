@@ -51,6 +51,15 @@ html[data-theme="Light"]{
 					background: rgba(218, 200, 175, 0.8) !important; 
 					color: @lightcolor;
 					border-radius: 20px;
+					@media @tablet {
+						margin: 30px;
+						padding: 30px;
+						width: 90%;
+						height: 400px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 
 					.banner-container {
 						.text-container {
@@ -60,7 +69,23 @@ html[data-theme="Light"]{
 							}
 						}
 					}
-
+					.download-resume {
+						text-align: right;
+						@media @desktop3 {
+							background: @lightbg;
+						}
+						@media @phone {
+							background: inherit;
+							border-radius: 20px;
+						}
+						a {
+							color: @lightcolor;
+							@media @tablet {
+								background: @lightbg;
+							}
+						}
+					}
+					}
 					.text-container-resume {
 						background: @lightbg;
 						color: @lightcolor;
@@ -79,7 +104,6 @@ html[data-theme="Light"]{
 			}
 		}
 	}
-}
 
 html[data-theme="Dark"] {
 	body{
@@ -124,6 +148,15 @@ html[data-theme="Dark"] {
 					background: darken(rgba(0, 0, 255, .8), 30%);
 					color: @darkcolor;
 					border-radius: 20px;
+					@media @tablet {
+						margin: 30px;
+						padding: 30px;
+						width: 90%;
+						height: 400px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 
 					.banner-container {
 						.text-container {
@@ -132,6 +165,18 @@ html[data-theme="Dark"] {
 								background: lighten(@darkbg, 10%);
 								color: lighten(@darkcolor, 50%);
 							}
+						}
+					}
+					.download-resume {
+						@media @desktop3 {
+							background: @darkbg;
+						}
+						@media @phone {
+							background: inherit;
+							border-radius: 20px;
+						}
+						a {
+							color: @darkcolor;
 						}
 					}
 					.text-container-resume {
