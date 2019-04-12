@@ -337,6 +337,7 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   display: flex;
   align-items: center;
   margin: 0;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .nav-bar-brand {
@@ -402,6 +403,9 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
     margin-right: 0px;
     width: 100%;
   }
+}
+.nav-bar-portfolio .navbar-collapse .nav-bar-links .nav-link-bar li {
+  cursor: pointer;
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .career-urls {
   display: flex;
