@@ -233,6 +233,9 @@ html[data-theme="Light"] body #root #body .text-container-resume button {
 html[data-theme="Light"] body #root #body .text-container-resume .recent-projects hr {
   background-color: #d3d8dc;
 }
+html[data-theme="Light"] body #root #body .text-container-resume .work-experience hr {
+  background-color: #d3d8dc;
+}
 html[data-theme="Dark"] body {
   background-image: url("../img/Screenshot-dark.png");
   background-attachment: fixed;
@@ -321,6 +324,9 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume bu
   color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .text-container-resume .recent-projects hr {
+  background-color: #5b5b68;
+}
+html[data-theme="Dark"] body #root #body .main-content .text-container-resume .work-experience hr {
   background-color: #5b5b68;
 }
 .navbar {
@@ -504,7 +510,7 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   align-self: flex-start;
   border-radius: 50%;
   height: 300px;
-  margin: 20px;
+  margin: -30px 20px 10px 0px;
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .text-container .pic-text img {
@@ -624,6 +630,10 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 .resume-container .text-container-resume .title-date h5 {
   margin: 0;
   padding: 0;
+}
+.resume-container .text-container-resume .title-date span {
+  padding-top: 20px;
+  margin-top: 0px;
 }
 @media (max-width: 1325px) {
   .resume-container .text-container-resume .title-date {
