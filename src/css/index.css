@@ -182,19 +182,52 @@ html[data-theme="Light"] body #root #body .main-content {
   color: #212529;
   border-radius: 20px;
 }
+@media (max-width: 767px) {
+  html[data-theme="Light"] body #root #body .main-content {
+    margin: 30px;
+    padding: 30px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 html[data-theme="Light"] body #root #body .main-content .banner-container .text-container button {
   background: #fff;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body .main-content .text-container-resume {
+html[data-theme="Light"] body #root #body .main-content .download-resume {
+  text-align: right;
+}
+@media (max-width: 900px) {
+  html[data-theme="Light"] body #root #body .main-content .download-resume {
+    background: #fff;
+  }
+}
+@media (max-width: 400px) {
+  html[data-theme="Light"] body #root #body .main-content .download-resume {
+    background: transparent;
+    border-radius: 20px;
+  }
+}
+html[data-theme="Light"] body #root #body .main-content .download-resume a {
+  color: #212529;
+}
+@media (max-width: 767px) {
+  html[data-theme="Light"] body #root #body .main-content .download-resume a {
+    background: #fff;
+  }
+}
+html[data-theme="Light"] body #root #body .text-container-resume {
   background: #fff;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body .main-content .text-container-resume button {
+html[data-theme="Light"] body #root #body .text-container-resume button {
   background: #fff;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body .main-content .text-container-resume .recent-projects hr {
+html[data-theme="Light"] body #root #body .text-container-resume .recent-projects hr {
   background-color: #d3d8dc;
 }
 html[data-theme="Dark"] body {
@@ -244,9 +277,34 @@ html[data-theme="Dark"] body #root #body .main-content {
   color: #a9a9b3;
   border-radius: 20px;
 }
+@media (max-width: 767px) {
+  html[data-theme="Dark"] body #root #body .main-content {
+    margin: 30px;
+    padding: 30px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button {
   background: #414348;
   color: #ffffff;
+}
+@media (max-width: 900px) {
+  html[data-theme="Dark"] body #root #body .main-content .download-resume {
+    background: #292a2d;
+  }
+}
+@media (max-width: 400px) {
+  html[data-theme="Dark"] body #root #body .main-content .download-resume {
+    background: inherit;
+    border-radius: 20px;
+  }
+}
+html[data-theme="Dark"] body #root #body .main-content .download-resume a {
+  color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .text-container-resume {
   background: #292a2d;
@@ -276,13 +334,12 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .nav-bar-brand {
-    width: 85%;
+    width: 60%;
     padding: 0;
   }
 }
 @media (max-width: 400px) {
   .nav-bar-portfolio .nav-bar-brand {
-    width: 60%;
     padding: 0;
   }
 }
@@ -305,21 +362,25 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 }
 .nav-bar-portfolio .navbar-collapse {
   display: flex;
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links {
   width: 100%;
   display: flex;
+  align-self: center;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links {
     padding-bottom: 20px;
     padding-right: 0;
+    margin: 0px;
   }
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .nav-link-bar {
@@ -333,7 +394,6 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
     display: flex;
     flex-direction: column;
     margin-right: 0px;
-    align-items: center;
     width: 100%;
   }
 }
@@ -383,15 +443,19 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  width: 50%;
+  width: 80%;
   cursor: pointer;
 }
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
-    width: 50%;
-    border-radius: 20px;
+    width: 80%;
     height: 40px;
     padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
+    width: 50%;
   }
 }
 .container-landing {
@@ -419,7 +483,7 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   height: 300px;
   margin: 20px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .container-landing .banner-container .text-container img {
     display: none;
   }
@@ -428,7 +492,7 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   width: calc(100% - 200px);
   padding: 10px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .container-landing .banner-container .text-container .text-block {
     width: 100%;
   }
@@ -470,11 +534,94 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   text-align: center;
   margin: 20px;
 }
-.resume-container .text-container-resume .recent-projects .single-project {
+.resume-container .text-container-resume .single-project,
+.resume-container .text-container-resume .single-work-experience,
+.resume-container .text-container-resume .single-education-experience {
   margin: 20px;
 }
-.resume-container .text-container-resume .recent-projects .single-project .responsibilities {
+.resume-container .text-container-resume .single-project .responsibilities,
+.resume-container .text-container-resume .single-work-experience .responsibilities,
+.resume-container .text-container-resume .single-education-experience .responsibilities {
   list-style-type: disc;
   margin-top: 20px;
   margin-left: 30px;
+}
+.resume-container .text-container-resume .title-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.resume-container .text-container-resume .title-date h5 {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1325px) {
+  .resume-container .text-container-resume .title-date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.resume-container .text-container-resume .single-education-experience h5 {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 900px) {
+  .resume-container .text-container-resume {
+    display: none;
+  }
+}
+.resume-container .download-resume {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .resume-container .download-resume {
+    height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .resume-container .download-resume {
+    height: auto;
+    width: auto;
+  }
+}
+.resume-container .download-resume a {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  .resume-container .download-resume a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .resume-container .download-resume a {
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 0px 20px;
+    width: auto;
+  }
+}
+.resume-container .download-resume a img {
+  width: 48px;
+}
+@media (max-width: 767px) {
+  .resume-container .download-resume a img {
+    width: 56px;
+    margin-bottom: 10px;
+  }
 }

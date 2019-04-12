@@ -12,13 +12,81 @@
             text-align: center;
             margin: 20px;
         }
-        .recent-projects {
-            .single-project {
-                margin: 20px;
-                .responsibilities {
-                    list-style-type: disc;
-                    margin-top: 20px;
-                    margin-left: 30px;
+        .single-project, .single-work-experience, .single-education-experience {
+            margin: 20px;
+            .responsibilities {
+                list-style-type: disc;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            
+        }
+
+        .title-date {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 5px;
+            h5 {
+                margin: 0;
+                padding: 0;
+            }
+            @media @desktop2 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        .single-education-experience {
+            h5 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        @media @desktop3 {
+            display: none;
+        }
+    }
+    .download-resume {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        @media @desktop3 {
+            height: 100px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        @media @tablet {
+            height: auto;
+            width: auto;
+        }
+        a {
+            font-weight: bold;
+            font-size: 1.5rem;
+            @media @desktop3 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                text-align: center;
+                padding: 20px;
+            }
+            @media @tablet {
+                flex-direction: column;
+                border-radius: 20px;
+                margin: 0px 20px;
+                width: auto;
+            }
+            img {
+                width: 48px;
+                @media @tablet {
+                    width: 56px;
+                    margin-bottom: 10px;
                 }
             }
         }
