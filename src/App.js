@@ -5,7 +5,7 @@ import Navigation from './components/Navbar/Navbar';
 import Landing from './components/Landing/Landing';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
 import Blog from './components/Blog';
 import Preview from './components/previewpic';
 
