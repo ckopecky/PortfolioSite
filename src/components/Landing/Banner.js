@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProfilePic from "../../img/profilepic.jpg";
+import ProfilePic from "../../img/WebsiteAssets/profilepic.jpg";
 
 const Banner = () => {
     return (
