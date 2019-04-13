@@ -1,6 +1,6 @@
 import React from 'react';
-import PDF from '../img/Kopecky_Christina_Resume.pdf';
-import PDFImage from '../img/PDF_24.png';
+import PDF from '../img/WebsiteAssets/Kopecky_Christina_Resume.pdf';
+import PDFImage from '../img/WebsiteAssets/PDF_24.png';
 
 class Resume extends React.Component {
 

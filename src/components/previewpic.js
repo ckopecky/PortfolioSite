@@ -1,5 +1,5 @@
 import React from 'react';
-import Preview from '../img/Website-Preview.png';
+import Preview from '../img/WebsiteAssets/Website-Preview.png';
 
 class previewpic extends React.Component {
     
