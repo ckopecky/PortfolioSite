@@ -64,6 +64,7 @@ class Resume extends React.Component {
                                 <span>February 2019 - Present</span>
                             </div>
                             <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h6>Lambda School</h6></a>
+                            <hr/>
                             <ul className="responsibilities">
                                 <li>Lead guided web development projects twice a week to about a dozen students.</li>
                                 <li>Facilitate standup meetings twice a week for a team of developers going through the curriculum to get a sense of their progress.</li>
@@ -75,7 +76,9 @@ class Resume extends React.Component {
                                 <h5>Section Lead for User Experience  (UX1)</h5>
                                 <span>October 2018-February 2019</span>
                             </div>
-                            <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h6>Lambda School</h6></a>                            <ul className="responsibilities">
+                            <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h6>Lambda School</h6></a>   
+                            <hr/>
+                            <ul className="responsibilities">
                                 <li>Attended and recorded all lectures for the cohort to use at a later date.</li>
                                 <li>Led standup meetings for UX students every afternoon to assess progress and collect feedback about the program.</li>
                             </ul>
@@ -85,6 +88,7 @@ class Resume extends React.Component {
                                 <h5>Flute Instructor</h5> 							 <span>January 2001-Present</span>
                             </div>
                             <h6>Self-Employed</h6>
+                            <hr/>
                             <ul className="responsibilities">
                                 <li>Gave critical ear to student performances and provided constructive criticism, encouragement  and praise when it was warranted</li>
                                 <li>Planned lessons and objectives appropriate for student’s level and assigned music that would fulfill those objectives, reminiscent of AGILE method</li>
@@ -95,12 +99,14 @@ class Resume extends React.Component {
                             <div className="title-date">
                                 <h5>Program Assistant</h5>				             <span>September 2007-May 2013</span>
                             </div>
-                            <a href="http://kansaspublicradio.org/" title="Kansas Public Radio" target="_blank" rel="noopener noreferrer"><h6>Kansas Public Radio (Lawrence, KS)</h6></a>                            <ul className="responsibilities">
-                                <ul><strong><span>Local host of NPR’s Weekend Edition Sunday</span></strong><span>(2007-2013)</span>
+                            <a href="http://kansaspublicradio.org/" title="Kansas Public Radio" target="_blank" rel="noopener noreferrer"><h6>Kansas Public Radio (Lawrence, KS)</h6></a>
+                            <hr/>
+                            <ul className="responsibilities">
+                                <ul><strong><span>Local host of NPR’s Weekend Edition Sunday</span></strong><span> (2007-2013)</span>
                                     <li>Prepared newscasts for broadcast</li>
                                     <li>Utilized a web-based content management system to prepare and to edit regional news headlines and classical music playlists</li>
                                 </ul>
-                                <ul><strong><span>Classical Music Host</span></strong><span>(2008-2011)</span>
+                                <ul><strong><span>Classical Music Host</span></strong><span> (2008-2011)</span>
                                     <li>Prepared, programmed and hosted classical music shows four evenings a week</li>
                                     <li>Assisted in entering new files and maintaining music library database of about 10,000 classical music CDs using Music Librarian – a content management system</li>
                                 </ul>
