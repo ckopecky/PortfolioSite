@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { CineView, SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes } from "../../services/projectInfo";
+
 class Portfolio extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-
+            projects: [CineView, SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes]
         }
     }
 
@@ -15,6 +17,7 @@ class Portfolio extends React.Component {
     }
 
     render(){
+        console.log(this.state.projects);
         return (
             <div className="main-content portfolio-container">
                 Plan of Attack for Portfolio<br/><br/>
