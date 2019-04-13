@@ -192,11 +192,11 @@ html[data-theme="Light"] body #root #body .main-content {
     align-items: center;
   }
 }
-html[data-theme="Light"] body #root #body .main-content .banner-container .text-container button {
+html[data-theme="Light"] body #root #body .main-content .banner-container button {
   background: #fff;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body .main-content .banner-container .text-container button:hover {
+html[data-theme="Light"] body #root #body .main-content .banner-container button:hover {
   background: #212529;
   color: #fff;
 }
@@ -231,6 +231,9 @@ html[data-theme="Light"] body #root #body .text-container-resume button {
   color: #212529;
 }
 html[data-theme="Light"] body #root #body .text-container-resume .recent-projects hr {
+  background-color: #d3d8dc;
+}
+html[data-theme="Light"] body #root #body .text-container-resume .work-experience hr {
   background-color: #d3d8dc;
 }
 html[data-theme="Dark"] body {
@@ -290,11 +293,11 @@ html[data-theme="Dark"] body #root #body .main-content {
     align-items: center;
   }
 }
-html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button {
+html[data-theme="Dark"] body #root #body .main-content .banner-container button {
   background: #414348;
   color: #ffffff;
 }
-html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button:hover {
+html[data-theme="Dark"] body #root #body .main-content .banner-container button:hover {
   background: #ffffff;
   color: #414348;
 }
@@ -321,6 +324,9 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume bu
   color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .text-container-resume .recent-projects hr {
+  background-color: #5b5b68;
+}
+html[data-theme="Dark"] body #root #body .main-content .text-container-resume .work-experience hr {
   background-color: #5b5b68;
 }
 .navbar {
@@ -477,101 +483,97 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
-.container-landing .banner-container .text-container {
-  width: 100%;
-  padding: 30px;
   font-family: 'Raleway';
 }
 @media (max-width: 767px) {
-  .container-landing .banner-container .text-container {
+  .container-landing .banner-container {
     padding: 5px;
     font-size: 1rem;
   }
 }
-.container-landing .banner-container .text-container .pic-text {
+.container-landing .banner-container .pic-text {
   display: flex;
   flex-direction: row-reverse;
 }
 @media (max-width: 1050px) {
-  .container-landing .banner-container .text-container .pic-text {
+  .container-landing .banner-container .pic-text {
     flex-direction: column;
     width: 100%;
   }
 }
-.container-landing .banner-container .text-container .pic-text img {
+.container-landing .banner-container .pic-text img {
   display: flex;
   align-self: flex-start;
   border-radius: 50%;
   height: 300px;
-  margin: 20px;
+  margin: -30px 20px 10px 0px;
 }
 @media (max-width: 1050px) {
-  .container-landing .banner-container .text-container .pic-text img {
+  .container-landing .banner-container .pic-text img {
     border-radius: 10px;
     align-self: center;
   }
 }
-.container-landing .banner-container .text-container .text-block {
+.container-landing .banner-container .text-block {
   width: 100%;
   padding: 10px;
 }
 @media (max-width: 925px) {
-  .container-landing .banner-container .text-container .text-block {
+  .container-landing .banner-container .text-block {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .container-landing .banner-container .text-container .text-block {
+  .container-landing .banner-container .text-block {
     padding: 5px;
   }
 }
-.container-landing .banner-container .text-container .text-block .carat {
+.container-landing .banner-container .text-block .carat {
   font-size: 1.6rem;
   font-weight: 700;
 }
-.container-landing .banner-container .text-container .text-block h1 {
+.container-landing .banner-container .text-block h1 {
   padding: 30px 0px;
   width: 100%;
 }
 @media (max-width: 925px) {
-  .container-landing .banner-container .text-container .text-block h1 {
+  .container-landing .banner-container .text-block h1 {
     text-align: center;
   }
 }
 @media (max-width: 1325px) {
-  .container-landing .banner-container .text-container .text-block h1 {
+  .container-landing .banner-container .text-block h1 {
     font-size: 1.8rem;
   }
 }
-.container-landing .banner-container .text-container .text-block p {
+.container-landing .banner-container .text-block p {
   padding: 10px;
   font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: 400;
 }
 @media (max-width: 767px) {
-  .container-landing .banner-container .text-container .text-block p {
+  .container-landing .banner-container .text-block p {
     padding: 0;
     margin: 0;
     font-size: 1.3rem;
   }
 }
-.container-landing .banner-container .text-container .text-block .across-page {
+.container-landing .banner-container .text-block .across-page {
   margin-bottom: 10px;
 }
 @media (max-width: 767px) {
-  .container-landing .banner-container .text-container .text-block .across-page {
+  .container-landing .banner-container .text-block .across-page {
     width: 100%;
   }
 }
-.container-landing .banner-container .text-container .text-block h3 {
+.container-landing .banner-container .text-block h3 {
   align-self: flex-start;
 }
-.container-landing .banner-container .text-container .text-block a {
+.container-landing .banner-container .text-block a {
   text-decoration: none;
 }
-.container-landing .banner-container .text-container .text-block button {
+.container-landing .banner-container .text-block button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,7 +584,7 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
   font-size: 1.4rem;
 }
 @media (max-width: 1050px) {
-  .container-landing .banner-container .text-container .text-block button {
+  .container-landing .banner-container .text-block button {
     width: 90%;
     margin: 20px auto;
   }
@@ -624,6 +626,10 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 .resume-container .text-container-resume .title-date h5 {
   margin: 0;
   padding: 0;
+}
+.resume-container .text-container-resume .title-date span {
+  padding-top: 20px;
+  margin-top: 0px;
 }
 @media (max-width: 1325px) {
   .resume-container .text-container-resume .title-date {

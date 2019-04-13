@@ -61,14 +61,12 @@ html[data-theme="Light"]{
 					}
 
 					.banner-container {
-						.text-container {
-							button {
-								background: @lightbg;
-								color: @lightcolor;
-								&:hover {
-									background: @lightcolor;
-									color: @lightbg;
-								}
+						button {
+							background: @lightbg;
+							color: @lightcolor;
+							&:hover {
+								background: @lightcolor;
+								color: @lightbg;
 							}
 						}
 					}
@@ -98,6 +96,11 @@ html[data-theme="Light"]{
 						}
 
 						.recent-projects {
+							hr{
+								background-color: lighten(@lightcolor, 70%);
+							}
+						}
+						.work-experience{
 							hr{
 								background-color: lighten(@lightcolor, 70%);
 							}
@@ -159,17 +162,13 @@ html[data-theme="Dark"] {
 						justify-content: center;
 						align-items: center;
 					}
-
-					.banner-container {
-						.text-container {
-							
-							button {
-								background: lighten(@darkbg, 10%);
-								color: lighten(@darkcolor, 50%);
-								&:hover {
-									background: lighten(@darkcolor, 50%);
-									color: lighten(@darkbg, 10%);
-								}
+					.banner-container {							
+						button {
+							background: lighten(@darkbg, 10%);
+							color: lighten(@darkcolor, 50%);
+							&:hover {
+								background: lighten(@darkcolor, 50%);
+								color: lighten(@darkbg, 10%);
 							}
 						}
 					}
@@ -197,8 +196,14 @@ html[data-theme="Dark"] {
 								background-color: darken(@darkcolor, 30%);
 							}
 						}
+						.work-experience{
+							hr{
+								background-color: darken(@darkcolor, 30%);
+							}
+						}
 					}
 				}
+				
 			}
 		}
 	}
