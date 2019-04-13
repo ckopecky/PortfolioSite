@@ -293,11 +293,11 @@ html[data-theme="Dark"] body #root #body .main-content {
     align-items: center;
   }
 }
-html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button {
+html[data-theme="Dark"] body #root #body .main-content .banner-container button {
   background: #414348;
   color: #ffffff;
 }
-html[data-theme="Dark"] body #root #body .main-content .banner-container .text-container button:hover {
+html[data-theme="Dark"] body #root #body .main-content .banner-container button:hover {
   background: #ffffff;
   color: #414348;
 }
