@@ -4,8 +4,7 @@ import ProfilePic from "../../img/profilepic.jpg";
 
 const Banner = () => {
     return (
-        <div className="banner-container">
-            <div className="text-container">
+        <div className="banner-container text-container">
                 <div className="text-block">
                     <div className="pic-text">
                         <img src={ProfilePic} alt="circle-profile"/>
@@ -25,7 +24,6 @@ const Banner = () => {
                     <Link to="/resume"><button>My Experience</button></Link>
                 </div>
             </div>
-        </div>
     );
 };
 
