@@ -241,18 +241,13 @@ html[data-theme="Light"] body #root #body .card {
   color: #212529;
 }
 html[data-theme="Light"] body #root #body .card .button-container .btn {
-  background: #808080 !important;
-  color: #212529;
+  background: #00afaf;
 }
 html[data-theme="Light"] body #root #body .card .button-container .btn a {
-  color: #fff;
+  color: white;
 }
 html[data-theme="Light"] body #root #body .card .button-container .btn:hover {
-  background: #292a2d !important;
-  font-variant-caps: small-caps;
-}
-html[data-theme="Light"] body #root #body .card .button-container .btn:hover a {
-  color: #fff;
+  background: #007c7c;
 }
 html[data-theme="Dark"] body {
   background-image: url("../img/WebsiteAssets/Screenshot-dark.png");
@@ -352,18 +347,14 @@ html[data-theme="Dark"] body #root #body .main-content .card {
   color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn {
-  background: #5a5c62 !important;
+  background: #5a5c62;
   color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn a {
   color: #a9a9b3;
 }
 html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover {
-  background: #cccccc !important;
-  font-variant-caps: small-caps;
-}
-html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover a {
-  color: #292a2d;
+  background: #004d4d;
 }
 .navbar {
   margin-bottom: 0px !important;
