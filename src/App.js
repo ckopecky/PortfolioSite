@@ -33,7 +33,7 @@ class App extends Component {
         document.documentElement.setAttribute("data-theme", theme);
         console.log(document.getElementsByTagName("html"))
         this.setState({theme: theme, buttonLabel: buttonLabel})
-      window.localStorage.setItem("Theme", this.state.theme);
+        window.localStorage.setItem("Theme", theme);
       }
 
     }
