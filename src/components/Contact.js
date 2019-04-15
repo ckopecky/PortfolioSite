@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+require('dotenv').config();
 
 class Contact extends React.Component {
     
@@ -10,16 +12,55 @@ class Contact extends React.Component {
     
     render(){
         return (
-            <div className="main-content contact-container">
-                Plan of Attack for Contact:
-    
-                checkout netlify forms <br/>
-                or use formspree.io to send information to me. <br/>
-                > Required information: Name, Reason for Contact, Message <br/>
-                > Recaptcha if not included in package <br/>
-    
+            <div className="main-content contact-wrapper">
+              <Form
+                className="contact-form"
+                action={process.env.REACT_APP_FORMSPREE_URI}
+                method="POST"
+              >
+                <p className="contact-header">
+                Contact Me! 
+                </p>
+                <div className="input-wrapper">
+                  <FormGroup className="contact-form-input">
+                    <Label>Name:</Label>
+                    <Input
+                      type="text"
+                      name="name"
+                      className="form-blank-name-email"
+                      placeholder="Enter your name - required"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup className="contact-form-input">
+                    <Label for="email">Email:</Label>
+                    <Input
+                      type="email"
+                      name="_replyto"
+                      className="form-blank-name-email"
+                      placeholder="Enter your email - required"
+                      required
+                    />
+                  </FormGroup>
+        
+                  <FormGroup className="contact-form-input">
+                    <Label for="message">Message:</Label>
+                    <Input
+                      type="textarea"
+                      name="message"
+                      className="message"
+                      required
+                      placeholder="required"
+                    />
+                  </FormGroup>
+        
+                  <Button className="submit-button" type="submit" value="Send Message">
+                    Submit
+                  </Button>
+                </div>
+              </Form>
             </div>
-        );
+          );
     }
     
 };
