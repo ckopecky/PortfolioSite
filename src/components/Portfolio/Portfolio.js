@@ -1,12 +1,14 @@
 import React from 'react';
+import PortfolioCard from './PortfolioCard';
 
 import { CineView, SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes } from "../../services/projectInfo";
+import { CardDeck } from 'reactstrap';
 
 class Portfolio extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            projects: [CineView, SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes]
+            projects: [CineView, LambdaNotes, SortingHat, Breakout, GoogleClone, InstaClone]
         }
     }
 
@@ -19,17 +21,13 @@ class Portfolio extends React.Component {
     render(){
         console.log(this.state.projects);
         return (
-            <div className="main-content portfolio-container">
-                Plan of Attack for Portfolio<br/><br/>
-                cards that display:<br/>
-                <ul style={{listStyle:"disc", padding: '0px 40px'}}>
-                    <li>a thumbnail image,</li> 
-                    <li>link to github repo,</li> 
-                    <li>link to deployed site,</li> 
-                    <li>brief description</li>
-                </ul> 
-                
-            </div>
+            <CardDeck className="main-content">
+                {this.state.projects.map(project => {
+                    return(
+                        <PortfolioCard key={project.github} project={project}/>
+                    )
+                })}
+            </CardDeck>
         );
     } 
     
