@@ -59,6 +59,15 @@ html[data-theme="Light"]{
 						justify-content: center;
 						align-items: center;
 					}
+					.btn {
+						background: darken(rgb(0, 226, 226), 10%),;
+						a {
+							color: white;	
+						}
+						&:hover {
+							background: darken(rgb(0, 226, 226), 20%)
+						}
+					}
 
 					.banner-container {
 						button {
@@ -121,6 +130,12 @@ html[data-theme="Light"]{
 							}
 						}
 					}
+					.contact-form-input {
+						.form-control {
+							background: @lightbg;
+							color: @lightcolor;
+						}
+					}
 				}
 			}
 		}
@@ -177,6 +192,17 @@ html[data-theme="Dark"] {
 						justify-content: center;
 						align-items: center;
 					}
+					.btn {
+						background: lighten(@darkbg, 20%);
+						color: @darkcolor; 
+						a {
+							color: @darkcolor;
+						}
+						&:hover {
+							background: darken(teal, 10%)
+						}
+						
+					}
 					.banner-container {							
 						button {
 							background: lighten(@darkbg, 10%);
@@ -232,6 +258,12 @@ html[data-theme="Dark"] {
 								}
 								
 							}
+						}
+					}
+					.contact-form-input {
+						.form-control {
+							background: @darkbg;
+							color: @darkcolor;
 						}
 					}
 				}
