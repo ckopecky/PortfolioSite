@@ -33,6 +33,7 @@ class Resume extends React.Component {
                             </h4>
                             <hr/>
                             <p>An app designed to let users find reviews on movies and write those reviews if a premium subscriber</p>
+                            <p>Completed in six weeks with a team of four developers</p>
                             <span><strong>{`Tech Stack: `}</strong></span><span>PostgreSQL | Express | React | Node</span>
                             <ul className="responsibilities">
                                 <li>Implemented 0Auth to authenticate users.</li>
@@ -47,6 +48,7 @@ class Resume extends React.Component {
                         </h4>        
                         <hr/>                
                         <p>An app that allows anyone to read, create, update or delete a note.</p>
+                        <p>Completed in two separate weeks (front-end: one week and back-end: one week) as a solo project</p>
                         <span><strong>{`Tech Stack: `}</strong></span><span>MongoDB | Express | React | Node</span>
                         <ul className="responsibilities">
                             <li>Followed client specifications to implement logic for client’s notes application.</li>
