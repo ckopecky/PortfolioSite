@@ -32,11 +32,11 @@ class PortfolioCard extends Component {
                 </CardText>
                 <div className="button-container">
                     <Button>
-                        <a href={this.props.project.github}>Github Repo</a>
+                        <a target="_blank" rel="noopener noreferrer" href={this.props.project.github}>Github Repo</a>
                     </Button>
                     {this.props.project.deploy !== null ? 
                     <Button>
-                        <a href={this.props.project.deploy}>Deployed Site</a>
+                        <a target="_blank" rel="noopener noreferrer" href={this.props.project.deploy}>Deployed Site</a>
                     </Button> : <Button className="hidden"></Button>}
                     
                 </div>
