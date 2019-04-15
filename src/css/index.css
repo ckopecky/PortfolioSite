@@ -784,7 +784,10 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
   padding: 0px 15px 15px 15px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+.card-deck .card .button-container .btn {
+  margin: 15px 30px 0px 0px;
 }
 .card-deck .card .button-container a {
   text-decoration: none;
