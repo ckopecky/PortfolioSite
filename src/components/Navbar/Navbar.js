@@ -54,9 +54,9 @@ class Navigation extends React.Component {
                         <NavItem>
                             <NavLink href="/resume">Resume</NavLink>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLink href="/blog">Blog</NavLink>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
                             <NavLink href="/contact">Contact</NavLink>
                         </NavItem>
