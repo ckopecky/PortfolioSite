@@ -192,6 +192,15 @@ html[data-theme="Light"] body #root #body .main-content {
     align-items: center;
   }
 }
+html[data-theme="Light"] body #root #body .main-content .btn {
+  background: #00afaf;
+}
+html[data-theme="Light"] body #root #body .main-content .btn a {
+  color: white;
+}
+html[data-theme="Light"] body #root #body .main-content .btn:hover {
+  background: #007c7c;
+}
 html[data-theme="Light"] body #root #body .main-content .banner-container button {
   background: #fff;
   color: #212529;
@@ -248,6 +257,10 @@ html[data-theme="Light"] body #root #body .card .button-container .btn a {
 }
 html[data-theme="Light"] body #root #body .card .button-container .btn:hover {
   background: #007c7c;
+}
+html[data-theme="Light"] body #root #body .contact-form-input .form-control {
+  background: #fff;
+  color: #212529;
 }
 html[data-theme="Dark"] body {
   background-image: url("../img/WebsiteAssets/Screenshot-dark.png");
@@ -306,6 +319,16 @@ html[data-theme="Dark"] body #root #body .main-content {
     align-items: center;
   }
 }
+html[data-theme="Dark"] body #root #body .main-content .btn {
+  background: #5a5c62;
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .btn a {
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .btn:hover {
+  background: #004d4d;
+}
 html[data-theme="Dark"] body #root #body .main-content .banner-container button {
   background: #414348;
   color: #ffffff;
@@ -355,6 +378,10 @@ html[data-theme="Dark"] body #root #body .main-content .card .button-container .
 }
 html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover {
   background: #004d4d;
+}
+html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form-control {
+  background: #292a2d;
+  color: #a9a9b3;
 }
 .navbar {
   margin-bottom: 0px !important;
@@ -761,4 +788,17 @@ html[data-theme="Dark"] body #root #body .main-content .card .button-container .
 }
 .card-deck .card .button-container a {
   text-decoration: none;
+}
+.contact-wrapper .contact-form .contact-header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact-wrapper .contact-form label {
+  font-size: 1.5rem;
+}
+.contact-wrapper .contact-form input {
+  font-size: 1.4rem;
+}
+.contact-wrapper .contact-form textarea {
+  font-size: 1.4rem;
 }
