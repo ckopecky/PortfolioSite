@@ -31,6 +31,9 @@ import InstaClone2 from "../img/InstaClone/InstaClone2.png";
 import Breakout1 from "../img/Breakout/breakout.png";
 import Breakout2 from "../img/Breakout/breakout2.png";
 
+
+import LambdaNotes1 from "../img/LambdaNotes/LambdaNotes1.png";
+
 require("dotenv").config();
 
 export const CineViewImages = [
@@ -50,3 +53,5 @@ export const GoogleCloneImages = [GoogleClone1];
 export const InstaCloneImages = [InstaClone1, InstaClone2];
 
 export const BreakoutImages = [Breakout1, Breakout2];
+
+export const LambdaNotesImages = [LambdaNotes1];
