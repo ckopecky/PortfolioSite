@@ -236,6 +236,24 @@ html[data-theme="Light"] body #root #body .text-container-resume .recent-project
 html[data-theme="Light"] body #root #body .text-container-resume .work-experience hr {
   background-color: #d3d8dc;
 }
+html[data-theme="Light"] body #root #body .card {
+  background: #fff;
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .card .button-container .btn {
+  background: #808080 !important;
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .card .button-container .btn a {
+  color: #fff;
+}
+html[data-theme="Light"] body #root #body .card .button-container .btn:hover {
+  background: #292a2d !important;
+  font-variant-caps: small-caps;
+}
+html[data-theme="Light"] body #root #body .card .button-container .btn:hover a {
+  color: #fff;
+}
 html[data-theme="Dark"] body {
   background-image: url("../img/WebsiteAssets/Screenshot-dark.png");
   background-attachment: fixed;
@@ -328,6 +346,24 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .r
 }
 html[data-theme="Dark"] body #root #body .main-content .text-container-resume .work-experience hr {
   background-color: #5b5b68;
+}
+html[data-theme="Dark"] body #root #body .main-content .card {
+  background: #292a2d;
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn {
+  background: #5a5c62 !important;
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn a {
+  color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover {
+  background: #cccccc !important;
+  font-variant-caps: small-caps;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover a {
+  color: #292a2d;
 }
 .navbar {
   margin-bottom: 0px !important;
@@ -718,12 +754,10 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .w
 .card-deck .card .card-title {
   padding: 15px;
   font-weight: bold;
-  color: black;
   font-size: 2rem;
 }
 .card-deck .card .card-text {
   padding: 0px 15px 15px 15px;
-  color: black;
 }
 .card-deck .card .card-text span {
   font-weight: bold;
@@ -736,5 +770,4 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .w
 }
 .card-deck .card .button-container a {
   text-decoration: none;
-  color: white;
 }
