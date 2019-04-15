@@ -14,13 +14,13 @@ const Banner = () => {
                             <br/>
                         </div>
                     </div>
-                    <div className="across-page">
+                    {/* <div className="across-page">
                         <p><span className="carat">></span> As part of Lambda School's Computer Science Academy I was able to do and learn incredible things. They gave me the opportunity to study web development for fifteen weeks, computer science for fifteen weeks and then lead a cohort for fifteen weeks as a project manager/section lead. Currently, I am a Teaching Assistant for an evening full-stack web cohort where I lead beginning web development guided projects twice a week.</p>
                         <br/>
 
                         <p><span className="carat">></span> My goal is to become a full-stack software engineer. I love interacting with designers and other engineers to work toward a common goal!</p>
                     </div>
-                    <h3><span className="carat">></span> Welcome!</h3>
+                    <h3><span className="carat">></span> Welcome!</h3> */}
                     <Link to="/resume"><button>My Experience</button></Link>
                 </div>
             </div>
