@@ -106,6 +106,27 @@ html[data-theme="Light"]{
 							}
 						}
 					}
+					.card {
+						background: @lightbg;
+						color: @lightcolor;
+						.button-container {
+							.btn {
+								background: darken(@lightbg, 50%)!important;
+								color: @lightcolor; 
+								a {
+									color: @lightbg;
+								}
+								&:hover {
+									background: @darkbg !important;
+									font-variant-caps: small-caps;
+									a {
+										color: @lightbg;
+									}
+								}
+								
+							}
+						}
+					}
 				}
 			}
 		}
@@ -199,6 +220,27 @@ html[data-theme="Dark"] {
 						.work-experience{
 							hr{
 								background-color: darken(@darkcolor, 30%);
+							}
+						}
+					}
+					.card {
+						background: @darkbg;
+						color: @darkcolor;
+						.button-container {
+							.btn {
+								background: lighten(@darkbg, 20%)!important;
+								color: @darkcolor; 
+								a {
+									color: @darkcolor;
+								}
+								&:hover {
+									background: darken(@lightbg, 20%)!important;
+									a {
+										color: @darkbg;
+									}
+									font-variant-caps: small-caps;
+								}
+								
 							}
 						}
 					}
