@@ -275,7 +275,7 @@ html[data-theme="Dark"] body #root #body .nav-bar-portfolio .switch {
 }
 html[data-theme="Dark"] body #root #body .main-content {
   width: 80%;
-  height: auto;
+  height: 100vh;
   align-self: center;
   margin: 50px;
   padding: 50px;
@@ -698,4 +698,43 @@ html[data-theme="Dark"] body #root #body .main-content .text-container-resume .w
     width: 56px;
     margin-bottom: 10px;
   }
+}
+.card-deck {
+  height: auto !important;
+  width: 95% !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-deck .card {
+  width: 600px !important;
+  flex: none !important;
+  font-size: 1.6rem;
+  margin: 60px 15px;
+}
+.card-deck .card .card-img {
+  height: 400px;
+}
+.card-deck .card .card-title {
+  padding: 15px;
+  font-weight: bold;
+  color: black;
+  font-size: 2rem;
+}
+.card-deck .card .card-text {
+  padding: 0px 15px 15px 15px;
+  color: black;
+}
+.card-deck .card .card-text span {
+  font-weight: bold;
+}
+.card-deck .card .button-container {
+  padding: 0px 15px 15px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-deck .card .button-container a {
+  text-decoration: none;
+  color: white;
 }
