@@ -14,6 +14,7 @@ import {
   NavLink
 } from "reactstrap";
 
+import PDFDownload from "../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf"
 import "../../css/index.css";
 import DarkLightSwitch from "./DarkLightSwitch";
 
@@ -52,7 +53,7 @@ class Navigation extends React.Component {
                             <NavLink href="/portfolio">Portfolio</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/resume">Resume</NavLink>
+                            <NavLink href={PDFDownload}>Download Resume</NavLink>
                         </NavItem>
                         {/* <NavItem>
                             <NavLink href="/blog">Blog</NavLink>
@@ -62,9 +63,9 @@ class Navigation extends React.Component {
                         </NavItem>
                     </div>
                     <NavItem className="career-urls">
-                        <NavLink href={twitterUrl}>
+                        {/* <NavLink href={twitterUrl}>
                             <i className="fab fa-twitter" />
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink href={githubUrl}>
                             <i className="fab fa-github" />
                         </NavLink>
