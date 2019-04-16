@@ -21,7 +21,7 @@ const Banner = () => {
                         <p><span className="carat">></span> My goal is to become a full-stack software engineer. I love interacting with designers and other engineers to work toward a common goal!</p>
                     </div>
                     <h3><span className="carat">></span> Welcome!</h3> */}
-                    <Link to="/resume"><button>My Experience</button></Link>
+                    <Link to="/portfolio"><button>My Recent Projects</button></Link>
                 </div>
             </div>
     );
