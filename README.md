@@ -1,19 +1,56 @@
-# PortfolioSite
+# Portfolio Site
 
-This site started with going through portions the UX Design Process:  Definition, Ideation and Design. 
+### Deployment
 
-In my research I took a look at two portfolio sites of a website developer. And while in most cases, heuristics passed, there were things I noticed from a UX standpoint that could stand to be done better:  the mobile breakpoint and how that content is displayed to the user. 
+Client: [Christina Kopecky Portfolio](http://christinakopecky.com/)
 
-__Definition__:
+#### Frontend Built Using:
 
-What is the minimum amount of information needed to get my overall point across? 
+- React.js
+- Dependencies:
 
-* Name
-* What I do (or want to do)
-* Projects
-* Resume
-* A way to contact me
-* About Me
+ 
+    - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+    - [dotenv](https://www.npmjs.com/package/dotenv)
+    - [react](https://reactjs.org/docs/getting-started.html)
+    - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+    - [reactstrap](https://reactstrap.github.io/)
 
--- This is what will go in the mobile version. If this is the minimum, we can expand from here for tablet and desktop versions. 
+- Heroku
+    - [https://www.heroku.com/](https://www.heroku.com/)
+
+#### Environmental Variables:
+    ##### Frontend Variables:
+    REACT_APP_TWITTER_URL=URL to your twitter
+    REACT_APP_GITHUB_URL=URL to your github
+    REACT_APP_LINKEDIN_URL=URL to your linked in profile
+    REACT_APP_FORMSPREE_URI=https://formspree.io/your-email
+
+Environmental variables are also used to point to the Github Repo and the Deployed Site for each of the portfolio pieces so that information is not in the code. Use the prefix `REACT_APP_` + whatever you want to call your variable to use environmental variables in a React application and just be sure that those vars match in your code. 
+
+<p align="center"><a href="#"><strong>Back To Top</strong></a></p>
+
+##### Using the Application
+
+Requirements: 
+- Node
+- Package Manager (such as Yarn or npm)
+    - [**Yarn**](https://yarnpkg.com/en/) was used to build this project.
+
+Have Node? Have **Yarn** or **npm**?
+Follow these steps:
+
+1. Fork and clone repo
+
+2. Add an `.env` file to the client side at the root of the folder (same level as the `package.json` file). 
+
+3. Add environmental variables for the frontend. 
+
+4. Run `yarn install` to install the necessary node_modules on the frontend. 
+
+6. Run `yarn start` to run the frontend on `localhost:3000`
+
+7. Your application is now running and can be tested locally. 
+
+<p align="center"><a href="#table-of-contents"><strong>Back To Top</strong></a></p> 
 
