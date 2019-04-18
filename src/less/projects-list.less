@@ -1,39 +1,69 @@
 .card-deck {
-    height: auto !important;
-    width: 95% !important;
+    padding: 0px 40px 40px 40px;
+    width: 100%;
+    align-self: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    min-height: 300px;
+    height: 100%;
+    @media @desktop3 {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
     .card {
-        width: 600px !important;
-        flex: none !important;
-        font-size: 1.6rem;
-        margin: 60px 15px;
+        flex: none !important; //overwrites reactstrao
+        width: 30%;
+        margin: 50px 0px;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        @media @desktop2 {
+            width: 45%;
+        }
+        @media @desktop3 {
+            width: 70%;
+        }
+        @media @tablet {
+            width: 80%;
+        }
+        @media @phone {
+            width: 100%;
+        }
         .card-img {
-            height: 400px;
+            height: 300px;
         }
         .card-title {
-            padding: 15px;
+            padding: 10px 15px 0px 15px;
+            margin: 0px;
             font-weight: bold;
             font-size: 2rem;
         }
         .card-text {
             padding: 0px 15px 15px 15px;
-            span {
-                font-weight: bold;
-            }
-        }
-        .button-container {
-            padding: 0px 15px 15px 15px;
-            width: 100%;
             display: flex;
-            justify-content: flex-start;
-            .btn {
-                margin: 15px 30px 0px 0px;
+            flex-direction: column;
+            justify-content: space-between;
+            .tech-stack {
+                font-size: 1.2rem;
+                margin-top: 15px;
+                span {
+                    font-weight: bold;
+                }
             }
-            a {
-                text-decoration: none;
-            }
+            
+        }
+        .btn {
+            width: 80%;
+            align-self: center;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .card-hidden {
+            visibility: hidden;
         }
     }
 }
