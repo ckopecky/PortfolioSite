@@ -699,9 +699,6 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   margin: 20px;
   font-size: 2rem;
 }
-.resume-container {
-  align-self: center;
-}
 .resume-container .text-container-resume {
   width: 100%;
   height: 100%;
