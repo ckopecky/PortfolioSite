@@ -1,10 +1,5 @@
 import React from "react";
 import {
-  twitterUrl,
-  githubUrl,
-  linkedInUrl
-} from "../../services/resourceURLS";
-import {
   Nav,
   NavbarBrand,
   Collapse,
@@ -29,13 +24,11 @@ class Navigation extends React.Component {
   }
 
   toggleNavbar() {
-    //   console.log("toggled!", this.state)
     this.setState({
       collapsed: !this.state.collapsed
     });
   }
   render() {
-    // console.log(this.props, "props from nav");
     return (
         <div>
             <Navbar className="nav-bar-portfolio" expand="md">
@@ -52,27 +45,16 @@ class Navigation extends React.Component {
                         <NavItem>
                             <NavLink href="/portfolio">Portfolio</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink href={PDFDownload}>Download Resume</NavLink>
-                        </NavItem>
                         {/* <NavItem>
                             <NavLink href="/blog">Blog</NavLink>
                         </NavItem> */}
                         <NavItem>
                             <NavLink href="/contact">Contact</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink href={PDFDownload}><i className="fas fa-external-link-alt"></i> Resume</NavLink>
+                        </NavItem>
                     </div>
-                    <NavItem className="career-urls">
-                        {/* <NavLink href={twitterUrl}>
-                            <i className="fab fa-twitter" />
-                        </NavLink> */}
-                        <NavLink href={githubUrl}>
-                            <i className="fab fa-github" />
-                        </NavLink>
-                        <NavLink href={linkedInUrl}>
-                            <i className="fab fa-linkedin" />
-                        </NavLink>
-                    </NavItem>
                     <NavItem className="switch-container">
                             <DarkLightSwitch
                             toggleDarkLight={this.props.toggleDarkLight}
@@ -80,8 +62,8 @@ class Navigation extends React.Component {
                             />
                     </NavItem>
                 </Nav>
-            </Collapse> 
-        </Navbar>
+                </Collapse> 
+            </Navbar>
     </div>
     );
     }
