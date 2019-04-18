@@ -28,7 +28,7 @@ class Contact extends React.Component {
                       type="text"
                       name="name"
                       className="form-blank-name-email"
-                      placeholder="Enter your name - required"
+                      placeholder="Joe Sample"
                       required
                     />
                   </FormGroup>
@@ -38,7 +38,7 @@ class Contact extends React.Component {
                       type="email"
                       name="_replyto"
                       className="form-blank-name-email"
-                      placeholder="Enter your email - required"
+                      placeholder="joe@sample.com"
                       required
                     />
                   </FormGroup>
@@ -50,7 +50,7 @@ class Contact extends React.Component {
                       name="message"
                       className="message"
                       required
-                      placeholder="required"
+                      placeholder="Hi, Christina!"
                     />
                   </FormGroup>
         
