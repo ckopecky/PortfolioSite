@@ -1,15 +1,15 @@
 //CineView
 import CineView1 from "../img/CineView/CineView1.png";
-import CineView2 from "../img/CineView/CineView2.png";
-import CineView3 from "../img/CineView/CineView3.png";
+// import CineView2 from "../img/CineView/CineView2.png";
+// import CineView3 from "../img/CineView/CineView3.png";
 import CineView4 from "../img/CineView/CineView4.png";
-import CineView5 from "../img/CineView/CineView5.png";
+// import CineView5 from "../img/CineView/CineView5.png";
 
 //SortingHat
 
 import SortingHat1 from "../img/SortingHat/HP01.png";
-import SortingHat2 from "../img/SortingHat/HP02.png";
-import SortingHat3 from "../img/SortingHat/HP03.png";
+// import SortingHat2 from "../img/SortingHat/HP02.png";
+// import SortingHat3 from "../img/SortingHat/HP03.png";
 
 //UX Lectures
 
