@@ -19,7 +19,6 @@ class Portfolio extends React.Component {
     }
 
     render(){
-        console.log(this.state.projects);
         return (
             <CardDeck className="main-content">
                 {this.state.projects.map(project => {
