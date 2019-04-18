@@ -4,6 +4,7 @@
 }
 .nav-bar-portfolio {
     display:flex;
+    align-self: center;
     padding: 0;
     width:100%;
 
@@ -49,6 +50,7 @@
         .nav-bar-links {
             width:100%;
             display:flex;
+            justify-content: flex-end;
             align-self: center;
 
             @media @tablet {
@@ -73,20 +75,9 @@
                 }
                 
             }
-            .career-urls {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                width: 25%;
-                @media @tablet {
-                    font-size: 1.5rem;
-                    width: 100%;
-
-                }
-            }
 
             .switch-container{
-                width: 25%;
+                width: 10%;
                 display: flex;
                 align-items: center;
 
@@ -116,9 +107,12 @@
                         border-radius: 20px;
                         width: 80%;
                         cursor: pointer;
+                        @media @desktop4 {
+                            width: 90%;
+                        }
                         @media @tablet {
-                            width: 80%;
-                            height: 40px;
+                            width: 40%;
+                            height: 20px;
                             padding: 0px;
                         }
                         @media @phone {
