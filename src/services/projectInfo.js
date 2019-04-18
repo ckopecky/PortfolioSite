@@ -1,9 +1,9 @@
-import { CineViewImages, SortingHatImages, GoogleCloneImages, InstaCloneImages, UXLecturesImages, BreakoutImages, LambdaNotesImages }from './imageImports';
+import { CineViewImages, SortingHatImages, GoogleCloneImages, InstaCloneImages, BreakoutImages, LambdaNotesImages }from './imageImports';
 require('dotenv').config();
 
 export const CineView = {
     name: "CineView",
-    images: [CineViewImages[0], CineViewImages[3]],
+    images: [CineViewImages[0], CineViewImages[1]],
     github: process.env.REACT_APP_GITHUB_CINEVIEW,
     deploy: process.env.REACT_APP_DEPLOY_CINEVIEW,
     description: "An application that allows a community of movie watchers read and write reviews on movies.",
@@ -48,7 +48,7 @@ export const LambdaNotes = {
 
 export const SortingHat = {
     name: "Sorting Hat",
-    images: [SortingHatImages[0], SortingHatImages[2]],
+    images: [SortingHatImages[0]],
     github: process.env.REACT_APP_GITHUB_SORTING_HAT,
     deploy: process.env.REACT_APP_DEPLOY_SORTING_HAT,
     description: "You've been accepted to wizarding school! Take the quiz to be sorted into your house.",

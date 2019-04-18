@@ -38,13 +38,10 @@ require("dotenv").config();
 
 export const CineViewImages = [
   CineView1,
-  CineView2,
-  CineView3,
   CineView4,
-  CineView5
 ];
 
-export const SortingHatImages = [SortingHat1, SortingHat2, SortingHat3];
+export const SortingHatImages = [SortingHat1];
 
 export const UXLecturesImages = [UXLectures1, UXLectures2, UXLectures3];
 
