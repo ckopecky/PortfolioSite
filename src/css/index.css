@@ -148,7 +148,7 @@ html[data-theme="Light"] body #root #body {
   flex-direction: column;
 }
 html[data-theme="Light"] body #root #body .nav-bar-portfolio {
-  background-color: #f8f9fa !important;
+  background-color: white !important;
 }
 html[data-theme="Light"] body #root #body .nav-bar-portfolio a {
   color: #212529;
@@ -173,23 +173,13 @@ html[data-theme="Light"] body #root #body .nav-bar-portfolio .switch {
   color: white;
 }
 html[data-theme="Light"] body #root #body .main-content {
-  width: 80%;
-  height: auto;
-  align-self: center;
-  margin: 50px;
-  padding: 50px;
+  width: 100%;
   background: rgba(218, 200, 175, 0.8) !important;
   color: #212529;
-  border-radius: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 925px) {
   html[data-theme="Light"] body #root #body .main-content {
-    margin: 30px;
-    padding: 30px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
   }
 }
 html[data-theme="Light"] body #root #body .main-content .btn {
@@ -202,12 +192,18 @@ html[data-theme="Light"] body #root #body .main-content .btn:hover {
   background: #007c7c;
 }
 html[data-theme="Light"] body #root #body .main-content .banner-container button {
-  background: #fff;
-  color: #212529;
+  background: #74407a;
+  color: white;
 }
 html[data-theme="Light"] body #root #body .main-content .banner-container button:hover {
   background: #212529;
   color: #fff;
+}
+html[data-theme="Light"] body #root #body .main-content .banner-container .career-urls a {
+  color: #212529;
+}
+html[data-theme="Light"] body #root #body .main-content .banner-container .career-urls a:hover {
+  color: #00b3b3;
 }
 html[data-theme="Light"] body #root #body .main-content .download-resume {
   text-align: right;
@@ -249,13 +245,22 @@ html[data-theme="Light"] body #root #body .card {
   background: #fff;
   color: #212529;
 }
-html[data-theme="Light"] body #root #body .card .button-container .btn {
+html[data-theme="Light"] body #root #body .card .tech-stack a {
+  color: #212529;
+  text-decoration: underline;
+}
+html[data-theme="Light"] body #root #body .card .tech-stack a:hover {
+  text-decoration: none;
+  color: #00e2e2;
+}
+html[data-theme="Light"] body #root #body .card .btn {
   background: #00afaf;
 }
-html[data-theme="Light"] body #root #body .card .button-container .btn a {
+html[data-theme="Light"] body #root #body .card .btn a {
   color: white;
+  font-weight: bold;
 }
-html[data-theme="Light"] body #root #body .card .button-container .btn:hover {
+html[data-theme="Light"] body #root #body .card .btn:hover {
   background: #007c7c;
 }
 html[data-theme="Light"] body #root #body .contact-form-input .form-control {
@@ -275,7 +280,7 @@ html[data-theme="Dark"] body #root #body {
   flex-direction: column;
 }
 html[data-theme="Dark"] body #root #body .nav-bar-portfolio {
-  background-color: #343a40 !important;
+  background-color: black !important;
 }
 html[data-theme="Dark"] body #root #body .nav-bar-portfolio a {
   color: #a9a9b3;
@@ -300,23 +305,13 @@ html[data-theme="Dark"] body #root #body .nav-bar-portfolio .switch {
   color: #212529;
 }
 html[data-theme="Dark"] body #root #body .main-content {
-  width: 80%;
-  height: auto;
-  align-self: center;
-  margin: 50px;
-  padding: 50px;
+  width: 100%;
   background: rgba(0, 0, 102, 0.8);
   color: #a9a9b3;
-  border-radius: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 925px) {
   html[data-theme="Dark"] body #root #body .main-content {
-    margin: 30px;
-    padding: 30px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
   }
 }
 html[data-theme="Dark"] body #root #body .main-content .btn {
@@ -330,12 +325,18 @@ html[data-theme="Dark"] body #root #body .main-content .btn:hover {
   background: #004d4d;
 }
 html[data-theme="Dark"] body #root #body .main-content .banner-container button {
-  background: #414348;
-  color: #ffffff;
+  background: #00b3b3;
+  color: #212529;
 }
 html[data-theme="Dark"] body #root #body .main-content .banner-container button:hover {
-  background: #ffffff;
+  background: #000000;
   color: #414348;
+}
+html[data-theme="Dark"] body #root #body .main-content .banner-container .career-urls a {
+  color: #8e8e9b;
+}
+html[data-theme="Dark"] body #root #body .main-content .banner-container .career-urls a:hover {
+  color: #004d4d;
 }
 @media (max-width: 925px) {
   html[data-theme="Dark"] body #root #body .main-content .download-resume {
@@ -369,19 +370,36 @@ html[data-theme="Dark"] body #root #body .main-content .card {
   background: #292a2d;
   color: #a9a9b3;
 }
-html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn {
-  background: #5a5c62;
+html[data-theme="Dark"] body #root #body .main-content .card .tech-stack a {
   color: #a9a9b3;
+  text-decoration: underline;
 }
-html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn a {
-  color: #a9a9b3;
+html[data-theme="Dark"] body #root #body .main-content .card .tech-stack a:hover {
+  text-decoration: none;
+  color: #007c7c;
 }
-html[data-theme="Dark"] body #root #body .main-content .card .button-container .btn:hover {
+html[data-theme="Dark"] body #root #body .main-content .card .btn {
   background: #004d4d;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .btn:hover {
+  background: teal;
+}
+html[data-theme="Dark"] body #root #body .main-content .card .btn a {
+  color: #a9a9b3;
+  font-weight: bold;
 }
 html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form-control {
   background: #292a2d;
   color: #a9a9b3;
+}
+html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn {
+  background: #00b3b3;
+  color: #212529;
+  font-weight: bold;
+}
+html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover {
+  background: teal;
+  color: #414348;
 }
 .navbar {
   margin-bottom: 0px !important;
@@ -389,6 +407,7 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 }
 .nav-bar-portfolio {
   display: flex;
+  align-self: center;
   padding: 0;
   width: 100%;
   /* The switch - the box around the slider */
@@ -442,6 +461,7 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .nav-bar-portfolio .navbar-collapse .nav-bar-links {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
   align-self: center;
 }
 @media (max-width: 767px) {
@@ -468,20 +488,8 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .nav-link-bar li {
   cursor: pointer;
 }
-.nav-bar-portfolio .navbar-collapse .nav-bar-links .career-urls {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 25%;
-}
-@media (max-width: 767px) {
-  .nav-bar-portfolio .navbar-collapse .nav-bar-links .career-urls {
-    font-size: 1.5rem;
-    width: 100%;
-  }
-}
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container {
-  width: 25%;
+  width: 10%;
   display: flex;
   align-items: center;
 }
@@ -517,10 +525,15 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
   width: 80%;
   cursor: pointer;
 }
+@media (max-width: 1050px) {
+  .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
+    width: 90%;
+  }
+}
 @media (max-width: 767px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
-    width: 80%;
-    height: 40px;
+    width: 40%;
+    height: 20px;
     padding: 0px;
   }
 }
@@ -530,15 +543,23 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
   }
 }
 .container-landing {
-  border-radius: 20px;
+  height: 100vh !important;
+  align-self: center;
+  display: flex;
 }
 .container-landing .banner-container {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
   padding: 30px;
   font-family: 'Roboto';
+}
+@media (max-width: 925px) {
+  .container-landing .banner-container {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .container-landing .banner-container {
@@ -549,6 +570,8 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .container-landing .banner-container .pic-text {
   display: flex;
   flex-direction: row-reverse;
+  width: 100%;
+  margin: 20px auto;
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .pic-text {
@@ -572,11 +595,8 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .container-landing .banner-container .text-block {
   width: 100%;
   padding: 10px;
-}
-@media (max-width: 925px) {
-  .container-landing .banner-container .text-block {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 767px) {
   .container-landing .banner-container .text-block {
@@ -586,31 +606,33 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .container-landing .banner-container .text-block .carat {
   font-size: 1.6rem;
   font-weight: 700;
+  display: none;
 }
 .container-landing .banner-container .text-block h1 {
   padding: 30px 0px;
   width: 100%;
 }
-@media (max-width: 925px) {
-  .container-landing .banner-container .text-block h1 {
-    text-align: center;
-  }
-}
 @media (max-width: 1325px) {
   .container-landing .banner-container .text-block h1 {
+    text-align: center;
     font-size: 1.8rem;
   }
 }
 .container-landing .banner-container .text-block p {
-  padding: 10px;
+  width: 75%;
   margin-right: 20px;
   font-size: 1.4rem;
   font-weight: 400;
 }
+@media (max-width: 1325px) {
+  .container-landing .banner-container .text-block p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
   .container-landing .banner-container .text-block p {
     padding: 0;
-    margin: 0;
     font-size: 1.2rem;
   }
 }
@@ -628,21 +650,57 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 .container-landing .banner-container .text-block a {
   text-decoration: none;
 }
-.container-landing .banner-container .text-block button {
+.container-landing .banner-container .text-block .banner-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+@media (max-width: 1325px) {
+  .container-landing .banner-container .text-block .banner-button-container {
+    width: 70%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1050px) {
+  .container-landing .banner-container .text-block .banner-button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.container-landing .banner-container .text-block .banner-button-container button {
+  width: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 40px;
-  margin-top: 30px;
-  border-radius: 20px;
+  border-radius: 40px;
   font-size: 1.4rem;
 }
+@media (max-width: 1325px) {
+  .container-landing .banner-container .text-block .banner-button-container button {
+    width: 100%;
+  }
+}
 @media (max-width: 1050px) {
-  .container-landing .banner-container .text-block button {
+  .container-landing .banner-container .text-block .banner-button-container button {
     width: 90%;
     margin: 20px auto;
   }
+}
+.container-landing .banner-container .text-block .career-urls {
+  display: flex;
+  width: 60%;
+  margin: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  justify-content: center;
+}
+.container-landing .banner-container .text-block .career-urls a {
+  width: 10%;
+  margin: 20px;
+  font-size: 2rem;
+}
+.resume-container {
+  align-self: center;
 }
 .resume-container .text-container-resume {
   width: 100%;
@@ -755,43 +813,91 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
   }
 }
 .card-deck {
-  height: auto !important;
-  width: 95% !important;
+  padding: 0px 40px 40px 40px;
+  width: 100%;
+  align-self: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  min-height: 300px;
+  height: 100%;
+}
+@media (max-width: 925px) {
+  .card-deck {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .card-deck .card {
-  width: 600px !important;
   flex: none !important;
-  font-size: 1.6rem;
-  margin: 60px 15px;
+  width: 30%;
+  margin: 50px 0px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1325px) {
+  .card-deck .card {
+    width: 45%;
+  }
+}
+@media (max-width: 925px) {
+  .card-deck .card {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .card-deck .card {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .card-deck .card {
+    width: 100%;
+  }
 }
 .card-deck .card .card-img {
-  height: 400px;
+  height: 300px;
 }
 .card-deck .card .card-title {
-  padding: 15px;
+  padding: 10px 15px 0px 15px;
+  margin: 0px;
   font-weight: bold;
   font-size: 2rem;
 }
 .card-deck .card .card-text {
   padding: 0px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.card-deck .card .card-text span {
+.card-deck .card .card-text .tech-stack {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+.card-deck .card .card-text .tech-stack span {
   font-weight: bold;
 }
-.card-deck .card .button-container {
-  padding: 0px 15px 15px 15px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+.card-deck .card .btn {
+  width: 80%;
+  align-self: center;
+  border-radius: 20px;
+  margin: 20px;
 }
-.card-deck .card .button-container .btn {
-  margin: 15px 30px 0px 0px;
-}
-.card-deck .card .button-container a {
+.card-deck .card a {
   text-decoration: none;
+}
+.card-deck .card .card-hidden {
+  visibility: hidden;
+}
+.contact-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.contact-wrapper .contact-form {
+  width: 70%;
 }
 .contact-wrapper .contact-form .contact-header {
   font-size: 2rem;
@@ -805,4 +911,9 @@ html[data-theme="Dark"] body #root #body .main-content .contact-form-input .form
 }
 .contact-wrapper .contact-form textarea {
   font-size: 1.4rem;
+  height: 200px;
+}
+.contact-wrapper .contact-form .input-wrapper .btn {
+  border-radius: 20px;
+  width: 10%;
 }
