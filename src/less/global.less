@@ -20,8 +20,9 @@ html[data-theme="Light"]{
 				color: @lightcolor;
 				display: flex;
 				flex-direction: column;
+
 				.nav-bar-portfolio {
-					background-color: @lightnav !important;
+					background-color: white !important;
 					a {
 						.hover-light-theme(rgb(0, 226, 226), 10%);
 					}
@@ -43,21 +44,11 @@ html[data-theme="Light"]{
 					}
 				}
 				.main-content {
-					width: 80%;
-					height: auto;
-					align-self: center;
-					margin: 50px;
-					padding: 50px;
+					width: 100%;
 					background: rgba(218, 200, 175, 0.8) !important; 
 					color: @lightcolor;
-					border-radius: 20px;
-					@media @tablet {
-						margin: 30px;
-						padding: 30px;
-						width: 90%;
-						display: flex;
-						justify-content: center;
-						align-items: center;
+					@media @desktop3 {
+						padding: 10px;
 					}
 					.btn {
 						background: darken(rgb(0, 226, 226), 10%),;
@@ -71,11 +62,19 @@ html[data-theme="Light"]{
 
 					.banner-container {
 						button {
-							background: @lightbg;
-							color: @lightcolor;
+							background:rgb(116, 64, 122);
+							color: white;
 							&:hover {
 								background: @lightcolor;
 								color: @lightbg;
+							}
+						}
+						.career-urls {
+							a {
+								color: @lightcolor;
+								&:hover {
+									color: lighten(teal, 10%);
+								}
 							}
 						}
 					}
@@ -118,15 +117,26 @@ html[data-theme="Light"]{
 					.card {
 						background: @lightbg;
 						color: @lightcolor;
-						.button-container {
-							.btn {
-								background: darken(rgb(0, 226, 226), 10%),;
-								a {
-									color: white;	
-								}
+						.tech-stack {
+							a {
+								color: @lightcolor;
+								text-decoration: underline;
 								&:hover {
-									background: darken(rgb(0, 226, 226), 20%)
+									text-decoration: none;
+									color:rgb(0, 226, 226);
 								}
+							}
+		
+						}
+						.btn {
+							background: darken(rgb(0, 226, 226), 10%),;
+							a {
+								color: white;	
+								font-weight: bold;
+							}
+							&:hover {
+								
+								background: darken(rgb(0, 226, 226), 20%)
 							}
 						}
 					}
@@ -154,7 +164,7 @@ html[data-theme="Dark"] {
 				display: flex;
 				flex-direction: column;
 				.nav-bar-portfolio {
-					background-color: @darknav !important;
+					background-color: black !important;
 					a {
 						.hover-dark-theme(teal, 10%);
 					}
@@ -176,21 +186,11 @@ html[data-theme="Dark"] {
 					}
 				}
 				.main-content {
-					width: 80%;
-					height: auto;
-					align-self: center;
-					margin: 50px;
-					padding: 50px;
+					width: 100%;
 					background: darken(rgba(0, 0, 255, .8), 30%);
 					color: @darkcolor;
-					border-radius: 20px;
-					@media @tablet {
-						margin: 30px;
-						padding: 30px;
-						width: 90%;
-						display: flex;
-						justify-content: center;
-						align-items: center;
+					@media @desktop3 {
+						padding: 10px;
 					}
 					.btn {
 						background: lighten(@darkbg, 20%);
@@ -205,14 +205,23 @@ html[data-theme="Dark"] {
 					}
 					.banner-container {							
 						button {
-							background: lighten(@darkbg, 10%);
-							color: lighten(@darkcolor, 50%);
+							background: lighten(teal, 10%);
+							color: @lightcolor;
 							&:hover {
-								background: lighten(@darkcolor, 50%);
+								background: darken(teal, 40%);
 								color: lighten(@darkbg, 10%);
 							}
 						}
+						.career-urls {
+							a {
+								color: darken(@darkcolor, 10%);
+								&:hover {
+									color: darken(teal, 10%);
+								}
+							}
+						}
 					}
+					
 					.download-resume {
 						@media @desktop3 {
 							background: @darkbg;
@@ -246,24 +255,46 @@ html[data-theme="Dark"] {
 					.card {
 						background: @darkbg;
 						color: @darkcolor;
-						.button-container {
-							.btn {
-								background: lighten(@darkbg, 20%);
-								color: @darkcolor; 
-								a {
-									color: @darkcolor;
-								}
+						.tech-stack{
+							a {
+								color: @darkcolor;
+								text-decoration: underline;
 								&:hover {
-									background: darken(teal, 10%)
+									text-decoration: none;
+									color: darken(rgb(0, 226, 226), 20%);
 								}
-								
 							}
 						}
+						.btn {
+							background: darken(teal, 10%);
+							&:hover {
+								background: teal;
+							}
+							a {
+								color: @darkcolor;
+								font-weight: bold;
+							}
+							
+							
+						}
+							
 					}
 					.contact-form-input {
 						.form-control {
 							background: @darkbg;
 							color: @darkcolor;
+						}
+						
+					}
+					.input-wrapper {
+						.btn {
+							background: lighten(teal, 10%);
+							color: @lightcolor;
+							font-weight: bold;
+							&:hover {
+								background: teal;
+								color: lighten(@darkbg, 10%);
+							}
 						}
 					}
 				}
