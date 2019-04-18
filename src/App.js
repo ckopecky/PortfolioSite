@@ -21,18 +21,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(window.localStorage, "localStorage");
     if(window.localStorage.getItem("Theme")){
       let theme = window.localStorage.getItem("Theme");
       this.setState({theme: theme, buttonLabel: theme === "Dark" ? "Light": "Dark"});
-      console.log(this.state, "state after this.setState cdm");
     } else {
       if (this.state.theme === "" && this.state.buttonLabel === "") {
-        console.log("from the if statement")
         const theme = "Light";
         const buttonLabel = "Dark";
         document.documentElement.setAttribute("data-theme", theme);
-        console.log(document.getElementsByTagName("html"))
         this.setState({theme: theme, buttonLabel: buttonLabel})
         window.localStorage.setItem("Theme", theme);
       }
@@ -50,7 +46,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state, 'state')
     return (
       <>
       <div id="body">
