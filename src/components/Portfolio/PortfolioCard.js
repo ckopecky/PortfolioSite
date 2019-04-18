@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, CardImg, CardTitle, CardText } from 'reactstrap';
+import { Card, Button, CardImg, CardTitle } from 'reactstrap';
 class PortfolioCard extends Component {
     constructor(props){
         super(props);
@@ -16,30 +16,26 @@ class PortfolioCard extends Component {
     }
 
     render() {
-        console.log(this.props.project, "card this props", this.state, "card state");
         return (
-            <Card>
+            <Card className="project-card">
                 <CardImg src={this.state.randomImage} alt="Project-Thumbnail" />
                 <CardTitle>
                     {/* Name of Application */}
                     {this.props.project.name}
                 </CardTitle>
-                <CardText>
+                <div className="card-text">
                     <div>{this.props.project.description}</div>
                 
                     {/* Tech Stack */}
-                    <div><span>Tech Stack: </span>{this.props.project.techStack}</div>
-                </CardText>
-                <div className="button-container">
-                    <Button>
+                    <div className="tech-stack">
+                        <div><span>Tech Stack: </span>{this.props.project.techStack}</div>
                         <a target="_blank" rel="noopener noreferrer" href={this.props.project.github}>Github Repo</a>
-                    </Button>
+                    </div>
+                </div>
                     {this.props.project.deploy !== null ? 
                     <Button>
-                        <a target="_blank" rel="noopener noreferrer" href={this.props.project.deploy}>Deployed Site</a>
-                    </Button> : <Button className="hidden"></Button>}
-                    
-                </div>
+                        <a target="_blank" rel="noopener noreferrer" href={this.props.project.deploy}>Visit Site</a>
+                    </Button> : <Button className="card-hidden"></Button>}
             </Card>
         );
     }
