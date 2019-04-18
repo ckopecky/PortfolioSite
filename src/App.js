@@ -39,7 +39,6 @@ class App extends Component {
   toggleDarkLight(){
     const theme = this.state.theme === "Dark" ? "Light" : "Dark";
     const buttonLabel = this.state.buttonLabel === "Dark" ? "Light" : "Dark";
-    console.log(theme, document.getElementsByTagName("html"));
     this.setState({ theme: theme, buttonLabel:  buttonLabel });
     window.localStorage.setItem("Theme", theme)
     document.documentElement.setAttribute("data-theme", theme);
