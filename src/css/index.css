@@ -140,7 +140,7 @@ html[data-theme="Light"] body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 800px;
 }
 html[data-theme="Light"] body #root #body {
   color: #212529;
@@ -190,9 +190,6 @@ html[data-theme="Light"] body #root #body .main-content .btn a {
 }
 html[data-theme="Light"] body #root #body .main-content .btn:hover {
   background: #007c7c;
-}
-html[data-theme="Light"] body #root #body .main-content .banner-container {
-  height: 100vh;
 }
 html[data-theme="Light"] body #root #body .main-content .banner-container button {
   background: #74407a;
@@ -326,9 +323,6 @@ html[data-theme="Dark"] body #root #body .main-content .btn a {
 }
 html[data-theme="Dark"] body #root #body .main-content .btn:hover {
   background: #004d4d;
-}
-html[data-theme="Dark"] body #root #body .main-content .banner-container {
-  height: 100vh;
 }
 html[data-theme="Dark"] body #root #body .main-content .banner-container button {
   background: #00b3b3;
@@ -549,16 +543,17 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   }
 }
 .container-landing {
-  height: auto;
-  align-self: center;
-  display: flex;
-}
-.container-landing .banner-container {
-  width: 60%;
+  width: 100%;
+  padding: 30px;
   display: flex;
   justify-content: center;
-  margin: 20px auto;
+  height: 100vh;
+}
+.container-landing .banner-container {
   padding: 30px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
   font-family: 'Roboto';
 }
 @media (max-width: 975px) {
@@ -574,18 +569,22 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .container-landing .banner-container .pic-text {
   display: flex;
+  padding: 30px;
   flex-direction: row-reverse;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .pic-text {
-    justify-content: center;
-    align-items: center;
+    background: pink;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+    height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .container-landing .banner-container .pic-text {
+    width: 100%;
   }
 }
 .container-landing .banner-container .pic-text img {
@@ -597,20 +596,25 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .pic-text img {
+    padding: 0px 0px;
+    height: 225px;
     border-radius: 10px;
-    margin-top: 50px;
     align-self: center;
   }
 }
 .container-landing .banner-container .text-block {
   width: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 767px) {
   .container-landing .banner-container .text-block {
     padding: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .container-landing .banner-container .text-block {
+    padding: 0px;
   }
 }
 .container-landing .banner-container .text-block .carat {
@@ -620,16 +624,22 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .container-landing .banner-container .text-block h1 {
   padding: 30px 0px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 @media (max-width: 1325px) {
   .container-landing .banner-container .text-block h1 {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 425px) {
+  .container-landing .banner-container .text-block h1 {
+    font-size: 1.3rem;
+  }
+}
 .container-landing .banner-container .text-block p {
   width: 90%;
-  margin-right: 10px;
+  margin: 0 auto;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -641,6 +651,12 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 @media (max-width: 767px) {
   .container-landing .banner-container .text-block p {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 425px) {
+  .container-landing .banner-container .text-block p {
+    width: 100%;
+    font-size: 1rem;
   }
 }
 .container-landing .banner-container .text-block .across-page {
@@ -661,6 +677,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   display: flex;
   justify-content: space-between;
   width: 60%;
+  margin: 0px 30px;
 }
 @media (max-width: 1325px) {
   .container-landing .banner-container .text-block .banner-button-container {
@@ -672,20 +689,26 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   .container-landing .banner-container .text-block .banner-button-container {
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
+    align-items: center;
   }
 }
 .container-landing .banner-container .text-block .banner-button-container button:nth-child(1) {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 40px;
 }
 @media (max-width: 1325px) {
   .container-landing .banner-container .text-block .banner-button-container button:nth-child(1) {
-    margin: 0px 30px 30px 0px;
+    margin: 0px 30px 30px 40px;
   }
 }
 @media (max-width: 975px) {
   .container-landing .banner-container .text-block .banner-button-container button:nth-child(1) {
     margin: 20px 0px;
+  }
+}
+@media (max-width: 1050px) {
+  .container-landing .banner-container .text-block .banner-button-container button:nth-child(1) {
+    margin: 10px 0px;
   }
 }
 .container-landing .banner-container .text-block .banner-button-container button {
@@ -698,26 +721,25 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 @media (max-width: 1325px) {
 }
-@media (max-width: 1050px) {
+@media (max-width: 425px) {
   .container-landing .banner-container .text-block .banner-button-container button {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
   }
 }
 .container-landing .banner-container .text-block .career-urls {
   display: flex;
-  width: 60%;
+  width: 65%;
   margin-top: 40px;
-  margin-left: 20px;
-  justify-content: center;
+  margin-left: 40px;
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .text-block .career-urls {
     width: 100%;
-    margin: 0px;
+    justify-content: center;
   }
 }
 .container-landing .banner-container .text-block .career-urls a {
+  width: 100px;
   font-size: 2rem;
   margin: 0px 30px;
 }
