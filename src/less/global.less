@@ -14,12 +14,13 @@ html[data-theme="Light"]{
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
-		height: 100vh;
+		min-height: 1000px;
 		#root{
 			#body {
 				color: @lightcolor;
 				display: flex;
 				flex-direction: column;
+
 
 				.nav-bar-portfolio {
 					background-color: white !important;
@@ -61,6 +62,7 @@ html[data-theme="Light"]{
 					}
 
 					.banner-container {
+						height: 100vh;
 						button {
 							background:rgb(116, 64, 122);
 							color: white;
@@ -157,7 +159,7 @@ html[data-theme="Dark"] {
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
-		height: 100vh;
+		min-height: 800px;
 		#root {
 			#body {
 				color: @darkcolor;
@@ -203,7 +205,8 @@ html[data-theme="Dark"] {
 						}
 						
 					}
-					.banner-container {							
+					.banner-container {	
+						height: 100vh;						
 						button {
 							background: lighten(teal, 10%);
 							color: @lightcolor;
