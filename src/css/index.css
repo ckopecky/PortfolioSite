@@ -933,3 +933,8 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   border-radius: 20px;
   width: 10%;
 }
+@media (max-width: 767px) {
+  .contact-wrapper .contact-form .input-wrapper .btn {
+    width: 80%;
+  }
+}
