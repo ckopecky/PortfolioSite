@@ -4,10 +4,8 @@
     display: flex;
     .banner-container {
         width: 60%;
-        height: 100vh;
         display:flex;
         justify-content: center;
-        align-items: center;
         margin: 20px auto;
         padding: 30px;
         font-family: 'Roboto';
@@ -23,12 +21,15 @@
             display: flex;
             flex-direction: row-reverse;
             width: 100%;
-            margin: 20px auto;
+            justify-content: space-around;
+            align-items: center;
             @media @desktop4 {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                width: 100%;
+                width: 80%;
+                margin: 0 auto;
+
             }
             img {
                 display: flex;
@@ -66,7 +67,6 @@
                 @media @desktop3 {
                 }
                 @media @desktop2 {
-                    text-align: center;
                     font-size: 1.8rem;
                 }
             }
@@ -76,8 +76,7 @@
                 font-size: 1.4rem;
                 font-weight: 400;
                 @media @desktop2 {
-                    width: 80%;
-                    margin: 0 auto;
+                    width: 90%;
                 }
                 @media @tablet {
                     font-size: 1.2rem;
@@ -109,29 +108,30 @@
                 }
                 @media @desktop4 {
                     flex-direction: column;
-                    width: 100%;
+                    margin: 0 auto;
+                    width: 80%;
                 }
 
                 button:nth-child(1){
                     margin: 0px 20px 0px 0px;
                     @media @desktop2 {
-                        margin: 30px;
-                        font-size: 1.2rem;
-
+                        margin: 0px 30px 30px 0px;
+                    }
+                    @media @desktop3 {
+                        margin: 20px 0px;
                     }
                 }
                 button {
-                    width: 20rem;
+                    width: 250px;
                     display: flex;
                     justify-content: center;
-                    margin: 0px 20px;
                     align-items: center;
                     border-radius: 40px;
                     font-size: 1.4rem;
                     @media @desktop2 {
-                        width: auto;
-                        margin: 0px 30px;
-                        font-size: 1.2rem;
+                        // width: auto;
+                        // margin: 0px 30px;
+                        // font-size: 1.2rem;
                     }
                     @media @desktop4 {
                         width: 90%;
