@@ -132,7 +132,7 @@ body {
   width: 100%;
   height: 100vmax;
   line-height: 1.54;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: inherit;
 }
 html[data-theme="Light"] body {
@@ -213,7 +213,7 @@ html[data-theme="Light"] body #root #body .main-content .download-resume {
     background: #fff;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   html[data-theme="Light"] body #root #body .main-content .download-resume {
     background: transparent;
     border-radius: 20px;
@@ -343,7 +343,7 @@ html[data-theme="Dark"] body #root #body .main-content .banner-container .career
     background: #292a2d;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   html[data-theme="Dark"] body #root #body .main-content .download-resume {
     background: inherit;
     border-radius: 20px;
@@ -425,7 +425,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
     padding: 0;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .nav-bar-portfolio .nav-bar-brand {
     padding: 0;
   }
@@ -433,7 +433,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 .nav-bar-portfolio .nav-bar-brand .name-slug {
   font-family: 'Homemade Apple';
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .nav-bar-portfolio .nav-bar-brand .name-slug {
     display: none;
   }
@@ -442,7 +442,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   display: none;
   font-family: 'Homemade Apple';
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .nav-bar-portfolio .nav-bar-brand .mobile-name-slug {
     display: flex;
   }
@@ -537,7 +537,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
     padding: 0px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container .day-switch .switch {
     width: 50%;
   }
@@ -723,7 +723,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   height: 100%;
   border-radius: 20px;
   padding: 30px;
-  font-family: 'Raleway';
+  font-family: 'Roboto';
 }
 .resume-container .text-container-resume h1 {
   text-align: center;
@@ -862,12 +862,12 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
     width: 70%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 650px) {
   .card-deck .card {
-    width: 80%;
+    width: 90%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .card-deck .card {
     width: 100%;
   }
@@ -929,12 +929,24 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   font-size: 1.4rem;
   height: 200px;
 }
+.contact-wrapper .contact-form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .contact-wrapper .contact-form .input-wrapper .btn {
   border-radius: 20px;
-  width: 10%;
+  width: 30%;
+  align-self: flex-end;
+}
+@media (max-width: 925px) {
+  .contact-wrapper .contact-form .input-wrapper .btn {
+    width: 50%;
+  }
 }
 @media (max-width: 767px) {
   .contact-wrapper .contact-form .input-wrapper .btn {
+    align-self: center;
     width: 80%;
+    margin-top: 20px;
   }
 }
