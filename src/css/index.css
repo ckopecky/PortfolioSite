@@ -575,7 +575,6 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 @media (max-width: 1050px) {
   .container-landing .banner-container .pic-text {
-    background: pink;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
