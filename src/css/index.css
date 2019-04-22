@@ -130,7 +130,6 @@ body {
   margin: 0 auto !important;
   max-width: 1800px !important;
   width: 100%;
-  height: 100vmax;
   line-height: 1.54;
   font-family: 'Roboto', sans-serif;
   color: inherit;
@@ -140,7 +139,6 @@ html[data-theme="Light"] body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 800px;
 }
 html[data-theme="Light"] body #root #body {
   color: #212529;
@@ -272,7 +270,6 @@ html[data-theme="Dark"] body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  min-height: 800px;
 }
 html[data-theme="Dark"] body #root #body {
   color: #a9a9b3;
@@ -547,7 +544,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   padding: 30px;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 .container-landing .banner-container {
   padding: 30px;
@@ -603,7 +600,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .container-landing .banner-container .text-block {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
