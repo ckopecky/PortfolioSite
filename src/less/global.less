@@ -1,10 +1,14 @@
+// body {
+// 	margin: 0 auto;
+// 	max-width: 1800px !important;
+// 	width: 100%;
+// 	line-height: 1.54;
+// 	font-family: 'Roboto', sans-serif;
+// 	color: inherit;
+// }
+
 body {
-	margin: 0 auto !important;
-	max-width: 1800px !important;
 	width: 100%;
-	line-height: 1.54;
-	font-family: 'Roboto', sans-serif;
-	color: inherit;
 }
 
 html[data-theme="Light"]{
@@ -44,12 +48,8 @@ html[data-theme="Light"]{
 					}
 				}
 				.main-content {
-					width: 100%;
 					background: rgba(218, 200, 175, 0.8) !important; 
 					color: @lightcolor;
-					@media @desktop3 {
-						padding: 10px;
-					}
 					.btn {
 						background: darken(rgb(0, 226, 226), 10%),;
 						a {
@@ -61,6 +61,7 @@ html[data-theme="Light"]{
 					}
 
 					.banner-container {
+						height: auto;
 						button {
 							background:rgb(116, 64, 122);
 							color: white;
@@ -185,7 +186,6 @@ html[data-theme="Dark"] {
 					}
 				}
 				.main-content {
-					width: 100%;
 					background: darken(rgba(0, 0, 255, .8), 30%);
 					color: @darkcolor;
 					@media @desktop3 {
