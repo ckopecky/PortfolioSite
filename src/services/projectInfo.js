@@ -6,7 +6,7 @@ export const CineView = {
     images: [CineViewImages[0], CineViewImages[1]],
     github: process.env.REACT_APP_GITHUB_CINEVIEW,
     deploy: process.env.REACT_APP_DEPLOY_CINEVIEW,
-    description: "An application that allows a community of movie watchers read and write reviews on movies.",
+    description: "An application that allows a community of movie watchers to read and write reviews on movies.",
     techStack: "PostgreSQL, Express, React, Node"
 }
 
