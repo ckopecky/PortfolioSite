@@ -169,6 +169,11 @@ html[data-theme="Light"] body #root #body .main-content {
   background: rgba(218, 200, 175, 0.8) !important;
   color: #212529;
 }
+@media (max-width: 975px) {
+  html[data-theme="Light"] body #root #body .main-content {
+    padding: 10px;
+  }
+}
 html[data-theme="Light"] body #root #body .main-content .btn {
   background: #00afaf;
 }
