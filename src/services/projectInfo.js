@@ -24,7 +24,7 @@ export const InstaClone = {
     images: InstaCloneImages,
     github: process.env.REACT_APP_GITHUB_INSTACLONE,
     deploy: process.env.REACT_APP_DEPLOY_INSTACLONE,
-    description: "An exercise in static User Interface development using React -- an Instagram Clone.",
+    description: "An exercise in User Interface development, Higher Order Components and Search/Create functionality using React -- an Instagram Clone.",
     techStack: "React"
 }
 
