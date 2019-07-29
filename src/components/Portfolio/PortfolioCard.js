@@ -18,7 +18,7 @@ class PortfolioCard extends Component {
     render() {
         return (
             <Card className="project-card">
-                <CardImg src={this.state.randomImage} alt="Project-Thumbnail" />
+                {/* <CardImg src={this.state.randomImage} alt="Project-Thumbnail" /> */}
                 <CardTitle>
                     {/* Name of Application */}
                     {this.props.project.name}
