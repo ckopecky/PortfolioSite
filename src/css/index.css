@@ -396,7 +396,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .navbar {
   margin-bottom: 0px !important;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 .nav-bar-portfolio {
   display: flex;
@@ -549,7 +549,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 @media (max-width: 975px) {
   .container-landing .banner-container {
@@ -575,7 +575,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   padding: 20px;
 }
 @media (max-width: 767px) {
@@ -710,7 +710,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   height: 100%;
   border-radius: 20px;
   padding: 30px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 .resume-container .text-container-resume h1 {
   text-align: center;
