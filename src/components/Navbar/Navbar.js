@@ -52,7 +52,7 @@ class Navigation extends React.Component {
                             <NavLink to="/contact">Contact</NavLink>
                         </NavItem>
                         <NavItem>
-                            <a href={() => window.location.replace(new RegExp('resume.christinakopecky.com', 'gi'))}><i className="fas fa-external-link-alt"></i> Resume</a>
+                            <a href={PDFDownload}><i className="fas fa-external-link-alt"></i> Resume</a>
                         </NavItem>
                     </div>
                     <NavItem className="switch-container">
