@@ -43,16 +43,16 @@ class Navigation extends React.Component {
                 <Nav className="nav-bar-links" navbar>
                     <div id="collapsed-nav-link-bar" className="nav-link-bar">
                         <NavItem>
-                            <NavLink href="/portfolio">Portfolio</NavLink>
+                            <NavLink to="/portfolio">Portfolio</NavLink>
                         </NavItem>
                         {/* <NavItem>
                             <NavLink href="/blog">Blog</NavLink>
                         </NavItem> */}
                         <NavItem>
-                            <NavLink href="/contact">Contact</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href={PDFDownload}><i className="fas fa-external-link-alt"></i> Resume</NavLink>
+                            <a href={() => window.location.replace(new RegExp('resume.christinakopecky.com', 'gi'))}><i className="fas fa-external-link-alt"></i> Resume</a>
                         </NavItem>
                     </div>
                     <NavItem className="switch-container">
