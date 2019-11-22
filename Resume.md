@@ -14,7 +14,7 @@
     Portfolio
     </a>
     <br>
-    <a style="color: darkblue;" href="mailto:kopecky12112@gmail.com">christina@christinakopecky.com</a>
+    <a style="color: darkblue;" href="mailto:christina@christinakopecky.com">christina@christinakopecky.com</a>
     • 573-270-1361
     <br>
 </p>
