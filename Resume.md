@@ -20,16 +20,14 @@
 </p>
 <div align="center"><h5 style="margin: 0;"><u>SKILLS:</u></h5> React/Redux | JavaScript | Node | Express | PostgreSQL | MongoDB | HTML/CSS | Python </div>
 
------
-
-<section className="recent-projects">
+<section>
     <h3><u>PROJECTS</u></h3>
     <h3 style="margin-bottom: 0px;">
     <a href="https://cineview.netlify.com" title="CineView: Real People, Real Reviews" target="_blank" rel="noopener noreferrer">CineView</a>
     </h3>
     <span>React | Express | Node | PostgreSQL</span>
     <p><em>An app designed to let users find reviews on movies and write those reviews if a premium subscriber</em></p>
-    <ul className="responsibilities">
+    <ul>
         <li>Implemented the authentication flow that allowed users to login using a third party.</li>
         <li>Integrated search functionality so users had the ability to search a movie library for films to write reviews on.</li>
         <li>Designed and implemented landing page hero element so that users had a clear call-to-action,</li>
@@ -81,28 +79,28 @@ edited and deleted.</li>
     </ul>
     <h4 style="margin: 0">Program Assistant</h4>
     <span style="font-size: 1rem;"><em><a href="http://kansaspublicradio.org/" title="Kansas Public Radio" target="_blank" rel="noopener noreferrer">Kansas Public Radio (Lawrence, KS)</a></em> • September 2007 - May 2013</span>
-    <ul className="responsibilities">
+    <ul>
         <li>Prepared newscasts for broadcast</li>
         <li>Utilized a web-based content management system to prepare and to edit regional news headlines and classical music playlists</li>
         <li>Prepared, programmed and hosted classical music shows four evenings a week</li>
         <li>Assisted in entering new files and maintaining music library database of about 10,000 classical music CDs using Music Librarian – a content management system</li>
     </ul>
 </section>
-<section className="education">
+<section>
     <h3><u>EDUCATION</u></h3>
-    <div className="single-education-experience" id="lambda-school">
+    <div>
         <a href="http://www.lambdaschool.com" title="Lambda School" target="_blank" rel="noopener noreferrer"><h5 style="margin: 0">Lambda School</h5></a>                                <ul className="responsibilities">	
             <li>Lambda School is a 7+ month Computer Science &  Software Engineering Academy that provides an immersive (full-time, 40+ hours/week) hands-on curriculum with a focus on computer science, software engineering, and web development.
             </li>
         </ul>
     </div>
-    <div className="single-education-experience" id="university-kansas">
+    <div>
         <a href="http://music.ku.edu" title="The University of Kansas School of Music" target="_blank" rel="noopener noreferrer"><h5 style="margin: 0">The University of Kansas</h5></a>    
-        <ul className="responsibilities">
+        <ul>
             <li>Master of Music in Flute Performance</li>
         </ul>
     </div>
-    <div className="single-education-experience" id="southeast-mo-state">
+    <div>
         <a href="https://semo.edu/music/" title="Southeast Missouri State University Dept of Music" target="_blank" rel="noopener noreferrer"><h5 style="margin: 0">Southeast Missouri State University</h5></a>                                <ul className="responsibilities">
             <li>Bachelor of Arts with a major in Music (Flute)</li>
             <li>Minors: Mass Communication and French</li>
