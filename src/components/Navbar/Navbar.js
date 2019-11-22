@@ -6,8 +6,8 @@ import {
   NavbarToggler,
   NavItem,
   Navbar,
-  NavLink
 } from "reactstrap";
+import { NavLink } from 'react-router-dom';
 
 import PDFDownload from "../../img/WebsiteAssets/Kopecky_Christina_Resume.pdf"
 import "../../css/index.css";

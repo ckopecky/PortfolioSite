@@ -18,7 +18,13 @@
     • 573-270-1361
     <br>
 </p>
-<div align="center"><h5 style="margin: 0;"><u>SKILLS:</u></h5> React/Redux | JavaScript | Node | Express | PostgreSQL | MongoDB | HTML/CSS | Python </div>
+<div align="center">
+    <h5 style="margin: 0;">
+        <u>SKILLS:</u>
+    </h5> 
+    React/Redux | JavaScript | Node | Express <br>
+    PostgreSQL | MongoDB | HTML/CSS | Python 
+</div>
 
 <section>
     <h3><u>PROJECTS</u></h3>
