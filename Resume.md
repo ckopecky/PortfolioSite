@@ -5,7 +5,7 @@
     <a style="color: darkblue; font-weight: bold; vertical-align: top;" href="https://github.com/ckopecky">  
     Github
     </a>      
-   <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> 
+    <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15">
     <a style="color: darkblue; font-weight: bold;" href="https://www.linkedin.com/in/cmvnk/">
     LinkedIn
     </a>
