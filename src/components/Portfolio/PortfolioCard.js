@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, CardImg, CardTitle } from 'reactstrap';
+import { Card, Button, CardTitle } from 'reactstrap';
 class PortfolioCard extends Component {
     constructor(props){
         super(props);
