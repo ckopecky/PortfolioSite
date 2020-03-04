@@ -396,7 +396,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .navbar {
   margin-bottom: 0px !important;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
 }
 .nav-bar-portfolio {
   display: flex;
@@ -480,6 +480,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .nav-link-bar li {
   cursor: pointer;
+  margin: 0px 20px;
 }
 .nav-bar-portfolio .navbar-collapse .nav-bar-links .switch-container {
   width: 10%;
@@ -575,7 +576,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
   padding: 20px;
 }
 @media (max-width: 767px) {
@@ -710,7 +711,7 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover
   height: 100%;
   border-radius: 20px;
   padding: 30px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto';
 }
 .resume-container .text-container-resume h1 {
   text-align: center;
