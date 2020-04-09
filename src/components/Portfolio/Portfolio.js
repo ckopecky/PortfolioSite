@@ -1,14 +1,14 @@
 import React from 'react';
 import PortfolioCard from './PortfolioCard';
 
-import { CineView, SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes } from "../../services/projectInfo";
+import { SortingHat, Breakout, GoogleClone, InstaClone, LambdaNotes } from "../../services/projectInfo";
 import { CardDeck } from 'reactstrap';
 
 class Portfolio extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            projects: [CineView, LambdaNotes, SortingHat, Breakout, GoogleClone, InstaClone]
+            projects: [ LambdaNotes, SortingHat, Breakout, GoogleClone, InstaClone]
         }
     }
 

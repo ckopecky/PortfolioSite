@@ -1,8 +1,8 @@
 //CineView
-import CineView1 from "../img/CineView/CineView1.png";
+// import CineView1 from "../img/CineView/CineView1.png";
 // import CineView2 from "../img/CineView/CineView2.png";
 // import CineView3 from "../img/CineView/CineView3.png";
-import CineView4 from "../img/CineView/CineView4.png";
+// import CineView4 from "../img/CineView/CineView4.png";
 // import CineView5 from "../img/CineView/CineView5.png";
 
 //SortingHat
@@ -36,10 +36,10 @@ import LambdaNotes1 from "../img/LambdaNotes/LambdaNotes1.png";
 
 require("dotenv").config();
 
-export const CineViewImages = [
-  CineView1,
-  CineView4,
-];
+// export const CineViewImages = [
+//   CineView1,
+//   CineView4,
+// ];
 
 export const SortingHatImages = [SortingHat1];
 
