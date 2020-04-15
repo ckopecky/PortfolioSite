@@ -29,7 +29,7 @@ class Resume extends React.Component {
                         <h3>PROJECTS</h3>
                         <div className="single-project" id="cineview">
                             <h4>
-                                <a href="https://cineview.netlify.com" title="CineView: Real People, Real Reviews" target="_blank" rel="noopener noreferrer">CineView</a>
+                                <a href="https://cineview.netlify.app" title="CineView: Real People, Real Reviews" target="_blank" rel="noopener noreferrer">CineView</a>
                             </h4>
                             <hr/>
                             <p>An app designed to let users find reviews on movies and write those reviews if a premium subscriber</p>
