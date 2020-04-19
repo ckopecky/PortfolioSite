@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useParams, useLocation, useHistory, useRouteMatch } from 'react-router-dom';
 import queryString from 'query-string';
 

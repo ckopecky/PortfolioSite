@@ -129,7 +129,7 @@ table {
 body {
   width: 100%;
 }
-html[data-theme="Light"] body {
+/* html[data-theme="Light"] body {
   background-image: url("../img/WebsiteAssets/Screenshot-light.png");
   background-attachment: fixed;
   background-position: center;
@@ -392,8 +392,8 @@ html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn {
 }
 html[data-theme="Dark"] body #root #body .main-content .input-wrapper .btn:hover {
   background: teal;
-  color: #414348;
-}
+  color: #414348; */
+/* } */
 .navbar {
   margin-bottom: 0px !important;
   font-family: 'Roboto';
